@@ -4,5 +4,22 @@ p, a {
     font-weight: 500;
 }
 body {
-    background-color: black;
+    background-color: gray;
 }
+.topbar {
+    background-color: black; border-color: aliceblue; overflow: hidden; height: auto; padding: 20px;
+}
+.topbar a {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20pt;
+    color: rgb(213, 213, 213);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
