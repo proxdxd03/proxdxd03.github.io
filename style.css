@@ -3,3 +3,6 @@ p, a {
     font-variant: small-caps;
     font-weight: 500;
 }
+base {
+    background-color: black;
+}
