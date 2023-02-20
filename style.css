@@ -1,19 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 html {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
 body {
-    background-color: gray;
+    background-color: black;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
-.wrapper {
-    height: 84vh;
-    width: 100vw;
+a:focus {
+    outline: none;
 }
+
 .topbar {
-    background-color: rgb(10,10,10); overflow: hidden; height: 80px;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    height: 80px;
+    padding-right: 40px;
 }
 .topbar a {
     float: right;
@@ -27,17 +34,41 @@ body {
     line-height: 60px;
     text-decoration: none;
 }
-.scrollbody {
-    overflow-y: auto;
-    padding: 5%;
-    width: 90%;
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.bottombar {
-    height: 20%;
-    background-color: beige;
-}
 .topbar a:hover {
     background-color: rgb(20, 20, 20);
-  }
+}
+
+.scrollbody {
+    overflow-y: auto;
+    padding: 5vh;
+    width: calc(100vw - 10vh);
+    height: calc(90vh - 160px);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(153, 131, 131);
+}
+
+.bottombar {
+    height: 80px;
+    background-color: rgb(15, 15, 15);
+}
+.bottombar img {
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+}
+.bottombar a:hover {
+    background-color: rgb(20, 20, 20);
+    border: 0px;
+}
+
+.formatted {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 10px;
+    line-height: 60px;
+    text-decoration: none;
+}
