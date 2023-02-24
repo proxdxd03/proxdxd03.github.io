@@ -22,6 +22,6 @@ export function addBlogEntries(elementId, category) {
 
 function addBlogEntriesByCategory(elementId, src) {
     for(var i = 0; i < src.length; i++) {
-        $(`#${elementId}`).load(src[i]);
+        $(`#${elementId}`).load(src[i]); 
     }
 }
