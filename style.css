@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700');
+
 /* General Resets */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand';
 }
 html {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Global Page Settings */
 body {
     background-color: black;
     overflow: hidden;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* No Link Marks */
@@ -24,112 +27,143 @@ a:focus {
 /* Top Navbar */
 .topbar {
     background-color: rgb(0,0,0);
-    height: 80px;
-    padding-right: 40px;
-    box-shadow: 0px 20px 20px 0px rgb(0, 0, 0, 0.3);
+    height: 10vmin;
+    padding-right: 5vmin;
+    box-shadow: 0 2.5vmin 2.5vmin 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 3;
 }
-.topbar img {
-    margin: 10px; 
-    height: 60px; 
-    width: 60px;
-}
-.topbar a {
+
+.topright a {
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 3vmin;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px;
-    line-height: 60px;
+    padding: 1.25vmin;
+    line-height: 7.5vmin;
     text-decoration: none;
+    font-variation-settings: 'wght' 600;
 }
-.topbar a:hover {
-    background-color: rgb(20, 20, 20);
+.topright a:hover {
+    background-color: rgb(16,16,16);
+    position: relative;
+    z-index: 4;
+}
+
+.topleft a {
+    float: left;
+    font-size: 3vmin;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.25vmin;
+    line-height: 7.5vmin;
+    text-decoration: none;
+    font-variation-settings: 'wght' 600;
+}
+.topleft img {
+    float: left;
+    height: 7.5vmin; 
+    width: 7.5vmin;
 }
 
 /* Wrapper for scrollable part of the page */
 .scrollbody {
     overflow-y: auto;
-    padding: 0;
     width: 100vw;
-    height: calc(100vh - 160px);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vh;
-    color: rgb(255, 255, 255);
+    height: calc(100vh - 20vmin);
     background-color: rgb(23, 23, 23);
     position: relative;
     z-index: 1;
     scroll-behavior: smooth;
 }
 
-/* Floating box in scrollable part */
-.contentbox {
-    height: min-content;
-    margin: 3vw;
-    padding: 1vw;
-    width: 91vw;
-    background-color: rgb(31, 31, 31);
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 2;
-
-}
-.contentbox p {
-    line-break: anywhere;
-    width: 90vw;
-    padding: 1vw;
+.tab {
+    font-variant: small-caps;
+    padding-top: 4vmin;
+    font-size: 5vmin;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-variation-settings: 'wght' 500;
 }
 
 /* In-box captions */
 .cap {
-    font-size: 4vh;
-    font-variant: small-caps;
-    font-weight: bold;
+    font-size: 4vmin;
+    color: rgb(255, 255, 255);
+    font-variation-settings: 'wght' 600;
+    line-break: anywhere;
+    padding-left: 6vmin;
+    padding-top: 2vmin;
 }
 
 /* In-box dates */
 .date {
-    font-size: 2.5vh;
-    font-variant: small-caps;
+    color: rgb(127, 127, 127);
+    font-size: 2vmin;
+    font-variation-settings: 'wght' 400;
+    padding-left: 6vmin;
+    padding-top: 0vmin;
+}
+
+/* Floating box in scrollable part */
+.contentbox {
+    height: min-content;
+    margin: 5vmin;
+    padding: 2vmin;
+    width: calc(100vw - 15vmin);
+    background-color: rgb(31, 31, 31);
+    box-shadow: 1vmin 1vmin 3vmin 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+
+}
+.text {
+    font-size: 2.5vmin;
+    color: rgb(255, 255, 255);
+    font-variation-settings: 'wght' 400;
+    line-break: anywhere;
+    width: calc(100% - 4vmin);
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 2vmin;
+    padding-top: 1vmin;
 }
 
 /* Footer */
 .bottombar {
-    height: 80px;
+    height: 10vmin;
     background-color: rgb(31, 31, 31);
-    box-shadow: 0 -20px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -2.5vmin 2.5vmin 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 3;
 }
 .bottombar img {
-    height: 40px;
-    width: 40px;
-    padding: 20px;
+    height: 5vmin;
+    width: 5vmin;
+    padding: 2.5vmin;
 }
-.bottombar a:hover {
-    background-color: rgb(20, 20, 20);
-    border: 0px;
+.bottombar img:hover {
+    background-color: rgb(39,39,39);
+    position: relative;
+    z-index: 4;
 }
 
-.formatted {
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(200, 200, 200);
+.bottombar p {
+    display: inline;
+    float: right;
+    font-size: 2vmin;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px;
-    line-height: 60px;
+    padding: 1.25vmin;
+    line-height: 7.5vmin;
     text-decoration: none;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 1vw;
+    width: 1vmin;
   }
   
   /* Track */
