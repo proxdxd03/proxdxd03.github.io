@@ -7,26 +7,26 @@ export function loadFromJSON(elementId, category) {
                 case "misc": 
                     loadByJSON(elementId, json.misc);
                     if(json.misc.length === 0) {
-                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="text">Nothing here yet. Check back to stay up to date with proxdxd03's work!</p></div>`));
+                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="missingpost">Nothing here yet. Check back to stay up to date with proxdxd03's work!</p></div>`));
                     }
                     break;
                 case "release": 
                     loadByJSON(elementId, json.release);
                     if(json.release.length === 0) {
-                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="text">Nothing here yet. Check back to find out about new releases!</p></div>`));
+                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="missingpost">Nothing here yet. Check back to find out about new releases!</p></div>`));
                     }
                     break;
                 case "concert": 
                     loadByJSON(elementId, json.concert);
                     if(json.concert.length === 0) {
-                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="text">The tour plan will be available soon!</p></div>`));
+                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="missingpost">The tour plan will be available soon!</p></div>`));
                     }
                     break;
                 case "all": 
                     let posts = json.misc.concat(json.release, json.concert)
                     loadByJSON(elementId, posts);
                     if(posts.length === 0) {
-                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="text">Nothing here yet.</p></div>`));
+                        document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="missingpost">Nothing here yet.</p></div>`));
                     }
                     break;
             }

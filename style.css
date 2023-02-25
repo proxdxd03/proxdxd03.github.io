@@ -101,9 +101,9 @@ a:focus {
 /* In-box dates */
 .date {
     color: rgb(127, 127, 127);
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     font-variation-settings: 'wght' 400;
-    padding-left: 6vmin;
+    padding-left: 8vmin;
     padding-top: 0vmin;
 }
 
@@ -131,16 +131,23 @@ a:focus {
     padding-top: 1vmin;
 }
 
+.missingpost {
+    font-size: 2.5vmin;
+    color: rgb(255, 255, 255);
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    text-align: center;
+    width: calc(100% - 4vmin);
+    padding: 8vmin;
+}
+
 .columns {
     display: flex;
 }
 
 .post_image {
     width: 30vmin;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
-    padding-bottom: 2vmin;
-    padding-top: 2vmin;
+    padding: 4vmin;
 }
 
 /* Footer */
