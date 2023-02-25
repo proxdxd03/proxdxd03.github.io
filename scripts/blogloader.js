@@ -1,31 +1,3 @@
-var misc_blogentries = ["24_02_2023_0.html"];
-var concert_blogentries = [];
-var release_blogentries = [];
-export function addBlogEntries(elementId, category) {
-    switch(category) {
-        case "all": 
-            addBlogEntriesByCategory(elementId, misc_blogentries)
-            addBlogEntriesByCategory(elementId, concert_blogentries)
-            addBlogEntriesByCategory(elementId, release_blogentries)
-            break;
-        case "misc": 
-            addBlogEntriesByCategory(elementId, misc_blogentries)
-            break;
-        case "concert": 
-            addBlogEntriesByCategory(elementId, concert_blogentries)
-            break;
-        case "release": 
-            addBlogEntriesByCategory(elementId, release_blogentries)
-            break;
-    }
-}
-
-function addBlogEntriesByCategory(elementId, src) {
-    for(var i = 0; i < src.length; i++) {
-        $(`#${elementId}`).load(`posts/${src[i]}`); 
-    }
-}
-
 export function loadFromJSON(elementId, category) {
     $.ajax({
         type:    "GET",
@@ -37,8 +9,9 @@ export function loadFromJSON(elementId, category) {
                 let cap = document.createElement("p")
                 cap.innerText = post.cap;
                 cap.className = "cap";
+                let splitdate = post.date.split(" ")
                 let date = document.createElement("p")
-                date.innerText = format(new Date(post.date))
+                date.innerText = format(post.splitdate)
                 date.className = "date";
                 let content = create(post.content)
                 let contentbox = document.createElement("div")
@@ -56,12 +29,13 @@ export function loadFromJSON(elementId, category) {
 }
 
 function format(date) {
-    return `${fullMonth(date)} ${date.getDate()}, ${date.getFullYear()}`
+    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return `${month[Number(date[1])]} ${date[2]}${suffix(date[2])}, ${date[0]}`
 }
 
 function create(htmlStr) {
     const frag = document.createDocumentFragment(),
-        temp = document.createElement('div');
+        temp = document.createElement("div");
     temp.innerHTML = htmlStr;
     while (temp.firstChild) {
         frag.appendChild(temp.firstChild);
@@ -69,7 +43,12 @@ function create(htmlStr) {
     return frag;
 }
 
-function fullMonth(date) {
-    const options = { month: "long" };
-    return new Intl.DateTimeFormat("en-US", options).format(date);
+function suffix(date) {
+    let lastDigit = date.charAt(date.length-1);
+    switch(lastDigit) {
+        case "1": return "st";
+        case "2": return "nd";
+        case "3": return "rd";
+        default: return "th";
+    }
 }
