@@ -56,7 +56,7 @@ export function loadFromJSON(elementId, category) {
 }
 
 function format(date) {
-    return `${date.getMonth().slice(0,3)} ${date.getDate()}, ${date.getFullYear()}`
+    return `${fullMonth(date)} ${date.getDate()}, ${date.getFullYear()}`
 }
 
 function create(htmlStr) {
@@ -67,4 +67,9 @@ function create(htmlStr) {
         frag.appendChild(temp.firstChild);
     }
     return frag;
+}
+
+function fullMonth(date) {
+    const options = { month: "long" };
+    return new Intl.DateTimeFormat("en-US", options).format(date);
 }
