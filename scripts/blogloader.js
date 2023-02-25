@@ -30,9 +30,7 @@ export function loadFromJSON(elementId, category) {
     $.ajax({
         type:    "GET",
         url:     "posts/posts.json",
-        success: function(text) {
-            console.log(text);
-            json = JSON.parse(text);
+        success: function(json) {
             console.log(json);
             array = json.misc;
             console.log(array);
