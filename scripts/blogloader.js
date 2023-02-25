@@ -30,7 +30,7 @@ export function loadFromJSON(elementId, category) {
 
 function format(date) {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    return `${month[Number(date[1])]} ${date[2]}${suffix(date[2])}, ${date[0]}`
+    return `${month[Number(date[1])-1]} ${date[2]}${suffix(date[2])}, ${date[0]}`
 }
 
 function create(htmlStr) {
