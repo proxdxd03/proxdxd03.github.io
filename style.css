@@ -94,6 +94,7 @@ a:focus {
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 600;
     line-break: normal;
+    width: calc(100% - 8vmin);
     padding-left: 8vmin;
     padding-top: 4vmin;
 }
@@ -103,6 +104,8 @@ a:focus {
     color: rgb(127, 127, 127);
     font-size: 3.5vmin;
     font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
     padding-left: 8vmin;
     padding-top: 0vmin;
 }
@@ -112,7 +115,7 @@ a:focus {
     height: min-content;
     margin: 5vmin;
     padding: 0;
-    width: calc(100vw - 15vmin);
+    width: calc(100vw - 11vmin);
     background-color: rgb(31, 31, 31);
     box-shadow: 1vmin 1vmin 3vmin 0 rgba(0, 0, 0, 0.3);
     position: relative;
@@ -124,7 +127,7 @@ a:focus {
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 400;
     line-break: normal;
-    width: calc(100% - 4vmin);
+    width: calc(100% - 8vmin);
     padding-left: 4vmin;
     padding-right: 4vmin;
     padding-bottom: 4vmin;
