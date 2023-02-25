@@ -38,7 +38,7 @@ export function loadFromJSON(elementId, category) {
                 cap.innerText = post.cap;
                 cap.className = "cap";
                 let date = document.createElement("p")
-                cap.innerText = format(new Date(post.date))
+                date.innerText = format(new Date(post.date))
                 date.className = "date";
                 let content = create(post.content)
                 let contentbox = document.createElement("div")
