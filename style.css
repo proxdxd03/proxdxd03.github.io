@@ -134,6 +134,11 @@ a:focus {
     padding-top: 1vmin;
 }
 
+.text a {
+    color: rgb(104, 174, 255);
+    text-decoration: none;
+}
+
 .missingpost {
     font-size: 2.5vmin;
     color: rgb(255, 255, 255);
