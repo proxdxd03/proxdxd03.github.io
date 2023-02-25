@@ -27,9 +27,9 @@ export function loadFromJSON(elementId, category) {
 
 function loadByJSON(elementId, array) {
     array.sort((a, b) => {
-        let asplit = a.split(" ")
-        let bsplit = b.split(" ")
-        return (10000*Number(bsplit[0]) + 100*Number(bsplit[1]) + Number(bsplit[2])) - (10000*Number(asplit[0]) + 100*Number(asplit[1]) + Number(asplit[2]))
+        let asplit = a.date.split(" ").map(a => Number(a))
+        let bsplit = b.date.split(" ").map(b => Number(b))
+        return (10000*bsplit[0] + 100*bsplit[1] + bsplit[2]) - (10000*asplit[0] + 100*asplit[1] + asplit[2])
     })
     for(let i = 0; i < array.length; i++) {
         const post = array[i];
