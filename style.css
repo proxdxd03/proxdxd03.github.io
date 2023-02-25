@@ -140,7 +140,7 @@ a:focus {
     font-variation-settings: 'wght' 400;
     line-break: normal;
     text-align: center;
-    width: calc(100% - 4vmin);
+    width: calc(100% - 16vmin);
     padding: 8vmin;
 }
 
