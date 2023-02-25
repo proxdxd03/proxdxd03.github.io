@@ -11,7 +11,7 @@ export function loadFromJSON(elementId, category) {
                 cap.className = "cap";
                 let splitdate = post.date.split(" ")
                 let date = document.createElement("p")
-                date.innerText = format(post.splitdate)
+                date.innerText = format(splitdate)
                 date.className = "date";
                 let content = create(post.content)
                 let contentbox = document.createElement("div")
