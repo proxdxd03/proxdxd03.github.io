@@ -93,7 +93,7 @@ a:focus {
     font-size: 4vmin;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 600;
-    line-break: anywhere;
+    line-break: normal;
     padding-left: 6vmin;
     padding-top: 2vmin;
 }
@@ -123,7 +123,7 @@ a:focus {
     font-size: 2.5vmin;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 400;
-    line-break: anywhere;
+    line-break: normal;
     width: calc(100% - 4vmin);
     padding-left: 2vmin;
     padding-right: 2vmin;
