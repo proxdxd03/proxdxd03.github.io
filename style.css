@@ -30,6 +30,11 @@ a:focus {
     position: relative;
     z-index: 3;
 }
+.topbar img {
+    margin: 10px; 
+    height: 60px; 
+    width: 60px;
+}
 .topbar a {
     float: right;
     font-family: Arial, Helvetica, sans-serif;

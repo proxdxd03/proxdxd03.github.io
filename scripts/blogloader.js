@@ -31,21 +31,21 @@ export function loadFromJSON(elementId, category) {
         type:    "GET",
         url:     "posts/posts.json",
         success: function(json) {
-            console.log(json);
             const array = json.misc;
-            console.log(array);
             for(let i = 0; i < array.length; i++) {
                 const post = array[i];
                 let cap = document.createElement("p")
                 cap.innerText = post.cap;
                 cap.className = "cap";
                 let date = document.createElement("p")
-                date.innerText = new Date(post.date).toString("MMMM yyyy");
+                cap.innerText = format(new Date(post.date))
                 date.className = "date";
+                let content = create(post.content)
                 let contentbox = document.createElement("div")
                 contentbox.className = "contentbox"
                 contentbox.appendChild(cap);
                 contentbox.appendChild(date);
+                contentbox.appendChild(content);
                 document.getElementById(elementId).appendChild(contentbox);
             }
         },
@@ -53,6 +53,10 @@ export function loadFromJSON(elementId, category) {
             console.log("BRUH")
         }
     });
+}
+
+function format(date) {
+    return `${date.getMonth().slice(0,3)} ${date.getDate()}, ${date.getFullYear()}`
 }
 
 function create(htmlStr) {
