@@ -32,7 +32,7 @@ export function loadFromJSON(elementId, category) {
         url:     "posts/posts.json",
         success: function(json) {
             console.log(json);
-            array = json.misc;
+            let array = json.misc;
             console.log(array);
             document.getElementById(elementId).innerHTML = array[0];
         },
@@ -43,7 +43,7 @@ export function loadFromJSON(elementId, category) {
 }
 
 function create(htmlStr) {
-    var frag = document.createDocumentFragment(),
+    let frag = document.createDocumentFragment(),
         temp = document.createElement('div');
     temp.innerHTML = htmlStr;
     while (temp.firstChild) {
