@@ -31,8 +31,11 @@ export function loadFromJSON(elementId, category) {
         type:    "GET",
         url:     "posts/posts.json",
         success: function(text) {
+            console.log(text);
             json = JSON.parse(text);
+            console.log(json);
             array = json.misc;
+            console.log(array);
             document.getElementById(elementId).innerHTML = array[0];
         },
         error:   function() {
