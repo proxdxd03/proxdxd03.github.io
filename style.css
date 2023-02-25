@@ -36,7 +36,7 @@ a:focus {
     font-variant: small-caps;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
     line-height: 60px;
@@ -54,7 +54,7 @@ a:focus {
     height: calc(100vh - 160px);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh;
-    color: rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
     background-color: rgb(23, 23, 23);
     position: relative;
     z-index: 1;
@@ -81,11 +81,12 @@ a:focus {
 .cap {
     font-size: 4vh;
     font-variant: small-caps;
+    font-weight: bold;
 }
 
 /* In-box dates */
 .date {
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-variant: small-caps;
 }
 

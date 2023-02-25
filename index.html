@@ -25,8 +25,9 @@
             <a href="https://discord.gg/FG3MTsTKDC"><img src="images/dc.png"></a>
         </div>
         <script type="module">
-            import {addBlogEntries} from "/scripts/blogloader.js";
-            addBlogEntries("blogspace", "all");
+            import {addBlogEntries, loadFromJSON} from "/scripts/blogloader.js";
+            //addBlogEntries("blogspace", "all");
+            loadFromJSON("blogspace", "all")
         </script>
     </body>
 </html>
