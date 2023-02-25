@@ -53,7 +53,7 @@ function loadByJSON(elementId, array) {
         date.innerText = format(splitdate)
         date.className = "date";
         let content = document.createElement("div")
-        content.className("text")
+        content.className = "text"
         content.appendChild(create(post.content))
         let contentbox = document.createElement("div")
         contentbox.className = "contentbox"
