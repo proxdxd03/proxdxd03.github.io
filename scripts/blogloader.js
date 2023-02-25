@@ -32,9 +32,22 @@ export function loadFromJSON(elementId, category) {
         url:     "posts/posts.json",
         success: function(json) {
             console.log(json);
-            let array = json.misc;
+            const array = json.misc;
             console.log(array);
-            document.getElementById(elementId).innerHTML = array[0];
+            for(let i = 0; i < array.length; i++) {
+                const post = array[i];
+                let cap = document.createElement("p")
+                cap.innerText = post.cap;
+                cap.className = "cap";
+                let date = document.createElement("p")
+                date.innerText = new Date(post.date).toString("MMMM yyyy");
+                date.className = "date";
+                let contentbox = document.createElement("div")
+                contentbox.className = "contentbox"
+                contentbox.appendChild(cap);
+                contentbox.appendChild(date);
+                document.getElementById(elementId).appendChild(contentbox);
+            }
         },
         error:   function() {
             console.log("BRUH")
@@ -43,7 +56,7 @@ export function loadFromJSON(elementId, category) {
 }
 
 function create(htmlStr) {
-    let frag = document.createDocumentFragment(),
+    const frag = document.createDocumentFragment(),
         temp = document.createElement('div');
     temp.innerHTML = htmlStr;
     while (temp.firstChild) {
@@ -51,7 +64,3 @@ function create(htmlStr) {
     }
     return frag;
 }
-
-var fragment = create('<div>Hello!</div><p>...</p>');
-// You can use native DOM methods to insert the fragment:
-document.body.insertBefore(fragment, document.body.childNodes[0]);

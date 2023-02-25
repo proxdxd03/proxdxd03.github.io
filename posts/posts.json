@@ -1,6 +1,9 @@
 {
     "misc": [
-        "<p>asdalksjkladjas</p>",
-        "<p>asdjaskhdkajsdhka</p>"
+        {
+            "cap": "TESTFORPOSTS",
+            "date": "25-02-2023",
+            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
+        }
     ]
 }

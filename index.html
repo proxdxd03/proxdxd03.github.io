@@ -3,6 +3,7 @@
     <head>
         <script src="scripts/jquery.js"></script>
         <script type="module" src="scripts/blogloader.js"></script>
+        <script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
         <title>proxdxd03 - Official Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/favicon.png">
@@ -26,7 +27,6 @@
         </div>
         <script type="module">
             import {addBlogEntries, loadFromJSON} from "/scripts/blogloader.js";
-            //addBlogEntries("blogspace", "all");
             loadFromJSON("blogspace", "all")
         </script>
     </body>
