@@ -1,23 +1,13 @@
 {
     "misc": [
         {
-            "cap": "TESTFORPOSTS",
+            "cap": "Hello World!",
             "date": "2023 02 25",
-            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
+            "content": "<p>proxdxd03's official webpage was launched! You will be informed about upcoming releases, concerts and other special events here! The page is run using GitHub Pages btw.</p>"
         }
     ],
     "release": [
-        {
-            "cap": "TESTFORPOSTS",
-            "date": "2023 02 27",
-            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
-        }
     ],
     "concert": [
-        {
-            "cap": "TESTFORPOSTS",
-            "date": "2023 02 23",
-            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
-        }
     ]
 }
