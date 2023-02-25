@@ -29,6 +29,7 @@ function loadByJSON(elementId, array) {
     array.sort((a, b) => {
         let asplit = a.date.split(" ")
         let bsplit = b.date.split(" ")
+        console.log((10000*asplit[0]+100*asplit[1]+asplit[2]) > (10000*bsplit[0]+100*bsplit[1]+bsplit[2]))
         return (10000*asplit[0]+100*asplit[1]+asplit[2]) > (10000*bsplit[0]+100*bsplit[1]+bsplit[2])
     })
     for(let i = 0; i < array.length; i++) {
