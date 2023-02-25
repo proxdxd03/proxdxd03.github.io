@@ -7,6 +7,11 @@
         }
     ],
     "release": [
+        {
+            "cap": "Single \"Funk You All\" confirmed",
+            "date": "2023 02 25",
+            "content": "<div class=\"columns\"><div><p>The first pre-release of the planned album \"Photon\", which is \"Funk You All\", is going to release to all platforms on March 11th, 2023. Listen to it then!</p></div><div><image src=\"images/20230225_funk_you_all.png\" class=\"post_image\"></div></div>"
+        }
     ],
     "concert": [
     ]

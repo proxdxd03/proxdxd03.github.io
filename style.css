@@ -131,6 +131,18 @@ a:focus {
     padding-top: 1vmin;
 }
 
+.columns {
+    display: flex;
+}
+
+.columns div+div {
+    margin-left: 2vmin;
+}
+
+.post_image {
+    width: 30vmin;
+}
+
 /* Footer */
 .bottombar {
     height: 10vmin;
