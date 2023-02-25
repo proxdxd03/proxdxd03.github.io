@@ -55,12 +55,33 @@ function loadByJSON(elementId, array) {
         let content = document.createElement("div")
         content.className = "text"
         content.appendChild(create(post.content))
-        let contentbox = document.createElement("div")
-        contentbox.className = "contentbox"
-        contentbox.appendChild(cap);
-        contentbox.appendChild(date);
-        contentbox.appendChild(content);
-        document.getElementById(elementId).appendChild(contentbox);
+        if(post.image !== "") {
+            let image = document.createElement("img")
+            image.className = "post_image"
+            image.src = post.image
+            let lCol = document.createElement("div")
+            lCol.appendChild(cap)
+            lCol.appendChild(date)
+            lCol.appendChild(content)
+            let rCol = document.createElement("div")
+            rCol.appendChild(image)
+            let columns = document.createElement("div")
+            columns.className = "columns"
+            columns.appendChild(lCol)
+            columns.appendChild(rCol)
+            let contentbox = document.createElement("div")
+            contentbox.className = "contentbox"
+            contentbox.appendChild(columns);
+            document.getElementById(elementId).appendChild(contentbox);
+        }
+        else {
+            let contentbox = document.createElement("div")
+            contentbox.className = "contentbox"
+            contentbox.appendChild(cap)
+            contentbox.appendChild(date)
+            contentbox.appendChild(content)
+            document.getElementById(elementId).appendChild(contentbox);
+        }
     }
 }
 

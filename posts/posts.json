@@ -3,14 +3,16 @@
         {
             "cap": "Hello World!",
             "date": "2023 02 25",
-            "content": "<p>proxdxd03's official webpage was launched! You will be informed about upcoming releases, concerts and other special events here! The page is run using GitHub Pages btw.</p>"
+            "content": "<p>proxdxd03's official webpage was launched! You will be informed about upcoming releases, concerts and other special events here! The page is run using GitHub Pages btw.</p>",
+            "image": ""
         }
     ],
     "release": [
         {
             "cap": "Single \"Funk You All\" confirmed",
             "date": "2023 02 25",
-            "content": "<div class=\"columns\"><div><p>The first pre-release of the planned album \"Photon\", which is \"Funk You All\", is going to release to all platforms on March 11th, 2023. Listen to it then!</p></div><div><image src=\"images/20230225_funk_you_all.png\" class=\"post_image\"></div></div>"
+            "content": "<p>The first pre-release of the planned album \"Photon\", which is \"Funk You All\", is going to release to all platforms on March 11th, 2023. Listen to it then!</p>",
+            "image": "images/20230225_funk_you_all.png"
         }
     ],
     "concert": [
