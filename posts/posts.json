@@ -5,5 +5,19 @@
             "date": "2023 02 25",
             "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
         }
+    ],
+    "release": [
+        {
+            "cap": "TESTFORPOSTS",
+            "date": "2023 02 27",
+            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
+        }
+    ],
+    "concert": [
+        {
+            "cap": "TESTFORPOSTS",
+            "date": "2023 02 23",
+            "content": "<div><p>ASKDAJSHDKJAJHSDKHAKJSHKADH</p></div>"
+        }
     ]
 }

@@ -3,29 +3,51 @@ export function loadFromJSON(elementId, category) {
         type:    "GET",
         url:     "posts/posts.json",
         success: function(json) {
-            const array = json.misc;
-            for(let i = 0; i < array.length; i++) {
-                const post = array[i];
-                let cap = document.createElement("p")
-                cap.innerText = post.cap;
-                cap.className = "cap";
-                let splitdate = post.date.split(" ")
-                let date = document.createElement("p")
-                date.innerText = format(splitdate)
-                date.className = "date";
-                let content = create(post.content)
-                let contentbox = document.createElement("div")
-                contentbox.className = "contentbox"
-                contentbox.appendChild(cap);
-                contentbox.appendChild(date);
-                contentbox.appendChild(content);
-                document.getElementById(elementId).appendChild(contentbox);
+            switch(category) {
+                case "misc": 
+                    loadByJSON(elementId, json.misc);
+                    break;
+                case "release": 
+                    loadByJSON(elementId, json.release);
+                    break;
+                case "concert": 
+                    loadByJSON(elementId, json.concert);
+                    break;
+                case "all": 
+                    posts = json.misc.concat(json.release, json.concert)
+                    loadByJSON(elementId, json.concert);
+                    break;
             }
         },
         error:   function() {
             console.log("BRUH")
         }
     });
+}
+
+function loadByJSON(elementId, array) {
+    array.sort((a, b) => {
+        let asplit = a.date.split(" ")
+        let bsplit = b.date.split(" ")
+        return (10000*asplit[0]+100*asplit[1]+asplit[2]) > (10000*bsplit[0]+100*bsplit[1]+bsplit[2])
+    })
+    for(let i = 0; i < array.length; i++) {
+        const post = array[i];
+        let cap = document.createElement("p")
+        cap.innerText = post.cap;
+        cap.className = "cap";
+        let splitdate = post.date.split(" ")
+        let date = document.createElement("p")
+        date.innerText = format(splitdate)
+        date.className = "date";
+        let content = create(post.content)
+        let contentbox = document.createElement("div")
+        contentbox.className = "contentbox"
+        contentbox.appendChild(cap);
+        contentbox.appendChild(date);
+        contentbox.appendChild(content);
+        document.getElementById(elementId).appendChild(contentbox);
+    }
 }
 
 function format(date) {
