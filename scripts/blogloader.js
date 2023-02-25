@@ -14,8 +14,8 @@ export function loadFromJSON(elementId, category) {
                     loadByJSON(elementId, json.concert);
                     break;
                 case "all": 
-                    posts = json.misc.concat(json.release, json.concert)
-                    loadByJSON(elementId, json.concert);
+                    let posts = json.misc.concat(json.release, json.concert)
+                    loadByJSON(elementId, posts);
                     break;
             }
         },
