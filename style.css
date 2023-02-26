@@ -120,6 +120,7 @@ a:focus {
     box-shadow: 1vmin 1vmin 3vmin 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
+    text-align: justify;
 
 }
 .text {
@@ -156,6 +157,7 @@ a:focus {
 .post_image {
     width: 30vmin;
     padding: 4vmin;
+    float: right;
 }
 
 /* Footer */
