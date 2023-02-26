@@ -81,7 +81,7 @@ a:focus {
 .tab {
     font-variant: small-caps;
     padding-top: 4vmin;
-    font-size: 5vmin;
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
@@ -90,7 +90,7 @@ a:focus {
 
 /* In-box captions */
 .cap {
-    font-size: 4vmin;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 600;
     line-break: normal;
@@ -102,7 +102,7 @@ a:focus {
 /* In-box dates */
 .date {
     color: rgb(127, 127, 127);
-    font-size: 3.5vmin;
+    font-size: 1.75rem;
     font-variation-settings: 'wght' 400;
     line-break: normal;
     width: calc(100% - 8vmin);
@@ -123,7 +123,7 @@ a:focus {
 
 }
 .text {
-    font-size: 2.5vmin;
+    font-size: 1.25rem;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 400;
     line-break: normal;
@@ -140,7 +140,7 @@ a:focus {
 }
 
 .missingpost {
-    font-size: 2.5vmin;
+    font-size: 1.25rem;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 400;
     line-break: normal;
