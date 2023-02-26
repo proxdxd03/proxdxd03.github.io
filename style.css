@@ -124,7 +124,7 @@ a:focus {
 }
 
 .imagebox {
-    min-height: 28vmin;
+    min-height: 38vmin;
 }
 
 .text {
@@ -159,7 +159,7 @@ a:focus {
 }
 
 .post_image {
-    width: 20vmin;
+    width: 30vmin;
     padding: 4vmin;
     float: right;
 }
