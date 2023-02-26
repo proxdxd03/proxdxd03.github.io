@@ -60,7 +60,7 @@ function loadByJSON(elementId, array) {
             image.className = "post_image"
             image.src = post.image
             let contentbox = document.createElement("div")
-            contentbox.className = "contentbox"
+            contentbox.className = "contentbox imagebox"
             contentbox.appendChild(image)
             contentbox.appendChild(cap)
             contentbox.appendChild(date)
