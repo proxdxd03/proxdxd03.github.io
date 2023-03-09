@@ -67,6 +67,12 @@ a:focus {
     width: 7.5vmin;
 }
 
+.current {
+    background-color: rgb(16, 16, 16);
+    position: relative;
+    z-index: 4;
+}
+
 /* Wrapper for scrollable part of the page */
 .scrollbody {
     overflow-y: auto;
