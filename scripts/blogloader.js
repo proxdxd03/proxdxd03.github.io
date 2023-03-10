@@ -1,7 +1,7 @@
 export function loadFromJSON(elementId, category) {
     $.ajax({
         type:    "GET",
-        url:     "posts/posts.json",
+        url:     "/posts/posts.json",
         success: function(json) {
             switch(category) {
                 case "misc": 
