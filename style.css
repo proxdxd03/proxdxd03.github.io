@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+iframe {
+    outline: none;
+    border: 0;
+}
+
 /* No Link Marks */
 a:focus {
     outline: none;
@@ -179,7 +184,6 @@ a:focus {
     width: 30vmin;
     height: 30vmin;
     padding: 4vmin;
-    outline: none;
     float: right;
 }
 
