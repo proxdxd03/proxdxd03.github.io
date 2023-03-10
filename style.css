@@ -133,6 +133,10 @@ a:focus {
     min-height: 38vmin;
 }
 
+.videobox {
+    min-height: 38vmin;
+}
+
 .text {
     font-size: 1.25rem;
     color: rgb(255, 255, 255);

@@ -55,10 +55,27 @@ function loadByJSON(elementId, array) {
         let content = document.createElement("div")
         content.className = "text"
         content.appendChild(create(post.content))
-        if(post.image !== "") {
+        if(post.media !== "") {
+            if(post.media.slice(0,3) === "yt/") {
+                let video = document.createElement("iframe")
+                let videoprops = post.media.slice(3).split(":")
+                video.src = `https://www.youtube-nocookie.com/embed/${videoprops[0]}?rel=0&iv_load_policy=3`
+                video.width = 1080
+                video.height = 1080
+                video.title = videoprops[1]
+                video.allowFullscreen = false
+                video.className = "post_video"
+                let contentbox = document.createElement("div")
+                contentbox.className = "contentbox videobox"
+                contentbox.appendChild(video)
+                contentbox.appendChild(cap)
+                contentbox.appendChild(date)
+                contentbox.appendChild(content)
+                document.getElementById(elementId).appendChild(contentbox);
+            } else {
             let image = document.createElement("img")
             image.className = "post_image"
-            image.src = post.image
+            image.src = post.media
             let contentbox = document.createElement("div")
             contentbox.className = "contentbox imagebox"
             contentbox.appendChild(image)
@@ -66,6 +83,7 @@ function loadByJSON(elementId, array) {
             contentbox.appendChild(date)
             contentbox.appendChild(content)
             document.getElementById(elementId).appendChild(contentbox);
+            }
         }
         else {
             let contentbox = document.createElement("div")
