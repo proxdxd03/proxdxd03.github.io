@@ -10,18 +10,22 @@
     <body>
             <div id="topbar" class="topbar">
                 <div class="topleft">
-                    <a href="index.html"><img src="images/icon.png">
+                    <a href="/"><img src="images/icon.png">
                     proxdxd03</a>
                 </div>
                 <div class="topright">
-                    <a href="contact_page.html">Contact</a>
-                    <a href="misc_page.html">Other News</a>
-                    <a href="concert_page.html" class ="current">Concerts</a>
-                    <a href="release_page.html">Releases</a>
+                    <a href="contact/" class="current">Contact</a>
+                    <a href="other_news/">Other News</a>
+                    <a href="concerts/">Concerts</a>
+                    <a href="releases/">Releases</a>
                 </div>
             </div>
         <div id="blogspace" class="scrollbody">
-            <p class="tab">Concerts</p>
+            <p class="tab">Contact</p>
+            <div class="contentbox">
+                <p class="cap">Mail</p>
+                <p class="text">Business requests: <a href="mailto:proxdxd03@gmail.com">proxdxd03@gmail.com</a></p>
+            </div>
         </div>
         <div class="bottombar">
             <a href="https://www.youtube.com/@proxdxdmusic"><img src="images/youtube.png"></a>
@@ -31,9 +35,5 @@
             <a href="https://discord.gg/FG3MTsTKDC"><img src="images/dc.png"></a>
             <p>© 2023 proxdxd03</p>
         </div>
-        <script type="module">
-            import {loadFromJSON} from "/scripts/blogloader.js";
-            loadFromJSON("blogspace", "concert")
-        </script>
     </body>
 </html>

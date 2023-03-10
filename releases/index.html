@@ -10,18 +10,18 @@
     <body>
             <div id="topbar" class="topbar">
                 <div class="topleft">
-                    <a href="index.html"><img src="images/icon.png">
+                    <a href="/"><img src="images/icon.png">
                     proxdxd03</a>
                 </div>
                 <div class="topright">
-                    <a href="contact_page.html">Contact</a>
-                    <a href="misc_page.html" class ="current">Other News</a>
-                    <a href="concert_page.html">Concerts</a>
-                    <a href="release_page.html">Releases</a>
+                    <a href="contact/">Contact</a>
+                    <a href="other_news/">Other News</a>
+                    <a href="concerts/">Concerts</a>
+                    <a href="releases/" class="current">Releases</a>
                 </div>
             </div>
         <div id="blogspace" class="scrollbody">
-            <p class="tab">Other News</p>
+            <p class="tab">Releases</p>
         </div>
         <div class="bottombar">
             <a href="https://www.youtube.com/@proxdxdmusic"><img src="images/youtube.png"></a>
@@ -33,7 +33,7 @@
         </div>
         <script type="module">
             import {loadFromJSON} from "/scripts/blogloader.js";
-            loadFromJSON("blogspace", "misc")
+            loadFromJSON("blogspace", "release")
         </script>
     </body>
 </html>
