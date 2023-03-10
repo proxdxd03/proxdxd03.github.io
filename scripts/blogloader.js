@@ -73,7 +73,7 @@ function loadByJSON(elementId, array) {
             } else {
             let image = document.createElement("img")
             image.className = "post_image"
-            image.src = post.media
+            image.src = "/" + post.media
             let contentbox = document.createElement("div")
             contentbox.className = "contentbox imagebox"
             contentbox.appendChild(image)
