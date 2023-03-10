@@ -170,6 +170,14 @@ a:focus {
 
 .post_image {
     width: 30vmin;
+    height: 30vmin;
+    padding: 4vmin;
+    float: right;
+}
+
+.post_video {
+    width: 30vmin;
+    height: 30vmin;
     padding: 4vmin;
     float: right;
 }
