@@ -179,6 +179,7 @@ a:focus {
     width: 30vmin;
     height: 30vmin;
     padding: 4vmin;
+    outline: none;
     float: right;
 }
 

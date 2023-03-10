@@ -59,7 +59,7 @@ function loadByJSON(elementId, array) {
             if(post.media.slice(0,3) === "yt/") {
                 let video = document.createElement("iframe")
                 let videoprops = post.media.slice(3).split(":")
-                video.src = `https://www.youtube-nocookie.com/embed/${videoprops[0]}?rel=0&iv_load_policy=3`
+                video.src = `https://www.youtube.com/embed/${videoprops[0]}?rel=0&iv_load_policy=3`
                 video.title = videoprops[1]
                 video.allowFullscreen = false
                 video.className = "post_video"
