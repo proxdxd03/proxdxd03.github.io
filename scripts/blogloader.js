@@ -111,6 +111,8 @@ function create(htmlStr) {
 
 function suffix(date) {
     let lastDigit = date.charAt(date.length-1);
+    let secondLastDigit = date.charAt(date.length-2);
+    if(secondLastDigit === "1") return "th";
     switch(lastDigit) {
         case "1": return "st";
         case "2": return "nd";
