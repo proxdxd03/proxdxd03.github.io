@@ -1,3 +1,5 @@
+import {create} from "/scripts/htmlutility.js"
+
 export function loadFromJSON(elementId, category) {
     $.ajax({
         type:    "GET",
@@ -97,16 +99,6 @@ function loadByJSON(elementId, array) {
 function format(date) {
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     return `${month[Number(date[1])-1]} ${date[2]}${suffix(date[2])}, ${date[0]}`
-}
-
-function create(htmlStr) {
-    const frag = document.createDocumentFragment(),
-        temp = document.createElement("div");
-    temp.innerHTML = htmlStr;
-    while (temp.firstChild) {
-        frag.appendChild(temp.firstChild);
-    }
-    return frag;
 }
 
 function suffix(date) {

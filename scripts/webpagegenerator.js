@@ -1,4 +1,5 @@
 import {loadFromJSON} from "/scripts/blogloader.js"
+import {create, elem, div, p, a, img} from "/scripts/htmlutility.js"
 
 export function createPageLayout(topic, specialcontent) {
     document.head.appendChild(elem("title", "", "", [], "proxdxd03 - Official Website", "", "", "", []))
@@ -56,35 +57,6 @@ function getTopicTitle(topic) {
         case "misc": return "Other News"
         case "contact": return "Contact"
     }
-}
-
-function elem(tagname, rel, href, classnames, innerText, id, src, style, children) {
-    let elem = document.createElement(tagname)
-    elem.rel = rel
-    elem.href = href
-    elem.classList = classnames
-    elem.innerText = innerText
-    elem.id = id
-    elem.src = src
-    elem.style = style
-    children.forEach((child) => {elem.appendChild(child)})
-    return elem
-}
-
-function div(classnames, innerText, id, style, children) {
-    return elem("div", "", "", classnames, innerText, id, "", style, children)
-}
-
-function p(classnames, innerText, id, style, children) {
-    return elem("p", "", "", classnames, innerText, id, "", style, children)
-}
-
-function a(href, classnames, innerText, id, style, children) {
-    return elem("a", "", href, classnames, innerText, id, "", style, children)
-}
-
-function img(classnames, id, src, style) {
-    return elem("img", "", "", classnames, "", id, src, style, [])
 }
 
 export class Contentbox {
