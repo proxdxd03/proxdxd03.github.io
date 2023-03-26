@@ -65,7 +65,7 @@ export class Contentbox {
     subcap
     content
     media
-    
+
     constructor (cap, subcap, content, media) {
         this.cap = cap
         this.subcap = subcap
