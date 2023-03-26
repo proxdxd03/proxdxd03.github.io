@@ -3,37 +3,13 @@
     <head>
         <script src="/scripts/jquery.js"></script>
         <script type="module" src="/scripts/blogloader.js"></script>
-        <title>proxdxd03 - Official Website</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="icon" href="/images/favicon.png">
+        <script type="module" src="/scripts/webpagegenerator.js"></script>
     </head>
     <body>
-            <div id="topbar" class="topbar">
-                <div class="topleft">
-                    <a href="/"><img src="/images/icon.png">
-                    proxdxd03</a>
-                </div>
-                <div class="topright">
-                    <a href="/contact/">Contact</a>
-                    <a href="/other_news/">Other News</a>
-                    <a href="/concerts/" class="current">Concerts</a>
-                    <a href="/releases/">Releases</a>
-                </div>
-            </div>
-        <div id="blogspace" class="scrollbody">
-            <p class="tab">Concerts</p>
-        </div>
-        <div class="bottombar">
-            <a href="https://www.youtube.com/@proxdxdmusic"><img src="/images/youtube.png"></a>
-            <a href="https://open.spotify.com/artist/2pfoI1ZRXb6ST9KhoGZlkW?si=JPZPuBWLRiWmNHov4lcRUA"><img src="/images/spotify.png"></a>
-            <a href="https://music.apple.com/de/artist/proxdxd03/1649502963?l=en"><img src="/images/applemusic.png"></a>
-            <a href="https://music.amazon.com/artists/B0BHXKXMJ6/proxdxd03?marketplaceId=A1PA6795UKMFR9&musicTerritory=EN&ref=dm_sh_Ao7WQCuzyX4paOZ8Euz7b0XcJ"><img src="/images/amazonmusic.png"></a>
-            <a href="https://discord.gg/FG3MTsTKDC"><img src="/images/dc.png"></a>
-            <a href="https://www.instagram.com/proxdxd03.artist"><img src="/images/ig.png"></a>
-            <p>© 2023 proxdxd03</p>
-        </div>
         <script type="module">
+            import {createPageLayout} from "/scripts/webpagegenerator.js"
             import {loadFromJSON} from "/scripts/blogloader.js";
+            createPageLayout("concerts")
             loadFromJSON("blogspace", "concert")
         </script>
     </body>
