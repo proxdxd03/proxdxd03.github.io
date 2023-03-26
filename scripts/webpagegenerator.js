@@ -6,38 +6,38 @@ export function createPageLayout(topic) {
     document.head.appendChild(elem("link", "icon", "/images/favicon.png", [], "", "", "", "", []))
     document.body.appendChild(elem("div", "", "", ["topbar"], "", "topbar", "", "", [
         elem("div", "", "", ["topleft"], "", "", "", "", [
-            elem("a", "", "/", [], "", "", "", "", [
+            a("/", [], "", "", "", [
                 elem("img", "", "", [], "", "", "/images/icon.png", "", []),
                 p([], "proxdxd03", "", "", [])
             ])
         ]),
         elem("div", "", "", ["topright"], "", "", "", "", [
-            elem("a", "", "/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", "", []),
-            elem("a", "", "/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", "", []),
-            elem("a", "", "/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", "", []),
-            elem("a", "", "/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", "", []),
+            a("/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", []),
+            a("/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", []),
+            a("/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", []),
+            a("/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", []),
         ])
     ]))
     document.body.appendChild(elem("div", "", "", ["scrollbody"], "", "blogspace", "", "", [
         p(["tab"], getTopicTitle(topic), "", "", [])
     ]))
     document.body.appendChild(elem("div", "", "", ["bottombar"], "", "", "", "", [
-        elem("a", "", "https://www.youtube.com/@proxdxdmusic", [], "", "", "", "", [
+        a("https://www.youtube.com/@proxdxdmusic", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/youtube.png", "", []),
         ]),
-        elem("a", "", "https://open.spotify.com/artist/2pfoI1ZRXb6ST9KhoGZlkW?si=JPZPuBWLRiWmNHov4lcRUA", [], "", "", "", "", [
+        a("https://open.spotify.com/artist/2pfoI1ZRXb6ST9KhoGZlkW?si=JPZPuBWLRiWmNHov4lcRUA", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/spotify.png", "", []),
         ]),
-        elem("a", "", "https://apple.co/40h7otr", [], "", "", "", "", [
+        a("https://apple.co/40h7otr", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/applemusic.png", "", []),
         ]),
-        elem("a", "", "https://music.amazon.com/artists/B0BHXKXMJ6/proxdxd03?marketplaceId=A1PA6795UKMFR9&musicTerritory=EN&ref=dm_sh_Ao7WQCuzyX4paOZ8Euz7b0XcJ", [], "", "", "", "", [
+        a("https://music.amazon.com/artists/B0BHXKXMJ6/proxdxd03?marketplaceId=A1PA6795UKMFR9&musicTerritory=EN&ref=dm_sh_Ao7WQCuzyX4paOZ8Euz7b0XcJ", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/amazonmusic.png", "", []),
         ]),
-        elem("a", "", "https://discord.gg/FG3MTsTKDC", [], "", "", "", "", [
+        a("https://discord.gg/FG3MTsTKDC", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/dc.png", "", []),
         ]),
-        elem("a", "", "https://www.instagram.com/proxdxd03.artist", [], "", "", "", "", [
+        a("https://www.instagram.com/proxdxd03.artist", [], "", "", "", [
             elem("img", "", "", [], "", "", "/images/ig.png", "", []),
         ]),
         p([], "© 2023 proxdxd03", "", "", [])
@@ -70,4 +70,8 @@ function elem(tagname, rel, href, classnames, innerText, id, src, style, childre
 
 function p(classnames, innerText, id, style, children) {
     return elem("p", "", "", classnames, innerText, id, "", style, children)
+}
+
+function a(href, classnames, innerText, id, style, children) {
+    return elem("a", "", href, classnames, innerText, id, "", style, children)
 }
