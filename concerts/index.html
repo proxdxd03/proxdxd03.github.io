@@ -2,15 +2,12 @@
 <html>
     <head>
         <script src="/scripts/jquery.js"></script>
-        <script type="module" src="/scripts/blogloader.js"></script>
         <script type="module" src="/scripts/webpagegenerator.js"></script>
     </head>
     <body>
         <script type="module">
             import {createPageLayout} from "/scripts/webpagegenerator.js"
-            import {loadFromJSON} from "/scripts/blogloader.js";
-            createPageLayout("concerts")
-            loadFromJSON("blogspace", "concert")
+            createPageLayout("concert")
         </script>
     </body>
 </html>

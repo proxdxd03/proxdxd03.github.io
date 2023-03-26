@@ -66,6 +66,9 @@ a:focus {
     text-decoration: none;
     font-variation-settings: 'wght' 600;
 }
+.topleft p {
+    display: inline
+}
 .topleft img {
     float: left;
     height: 7.5vmin; 
