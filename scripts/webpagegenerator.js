@@ -60,12 +60,19 @@ function getTopicTitle(topic) {
 }
 
 export class Contentbox {
+
+    cap
+    subcap
+    content
+    media
+    
     constructor (cap, subcap, content, media) {
         this.cap = cap
         this.subcap = subcap
         this.content = content
         this.media = media
     }
+
     generateElement() {
         let cap = document.createElement("p")
         cap.innerText = this.cap
