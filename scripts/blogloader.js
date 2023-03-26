@@ -22,7 +22,7 @@ export function loadFromJSON(elementId, category) {
                         document.getElementById(elementId).appendChild(create(`<div class="contentbox"><p class="missingpost">The tour plan will be available soon!</p></div>`));
                     }
                     break;
-                case "all": 
+                case "home": 
                     let posts = json.misc.concat(json.release, json.concert)
                     loadByJSON(elementId, posts);
                     if(posts.length === 0) {

@@ -8,18 +8,18 @@ export function createPageLayout(topic) {
         elem("div", "", "", ["topleft"], "", "", "", "", [
             elem("a", "", "/", [], "", "", "", "", [
                 elem("img", "", "", [], "", "", "/images/icon.png", "", []),
-                elem("p", "", "", [], "proxdxd03", "", "", "", [])
+                p([], "proxdxd03", "", "", [])
             ])
         ]),
         elem("div", "", "", ["topright"], "", "", "", "", [
-            elem("a", "", "/contact/", [], "Contact", "", "", "", []),
-            elem("a", "", "/other_news/", [], "Other News", "", "", "", []),
-            elem("a", "", "/concerts/", [], "Concerts", "", "", "", []),
-            elem("a", "", "/releases/", [], "Releases", "", "", "", []),
+            elem("a", "", "/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", "", []),
+            elem("a", "", "/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", "", []),
+            elem("a", "", "/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", "", []),
+            elem("a", "", "/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", "", []),
         ])
     ]))
     document.body.appendChild(elem("div", "", "", ["scrollbody"], "", "blogspace", "", "", [
-        elem("p", "", "", ["tab"], "Test", "", "", "", [])
+        p(["tab"], getTopicTitle(topic), "", "", [])
     ]))
     document.body.appendChild(elem("div", "", "", ["bottombar"], "", "", "", "", [
         elem("a", "", "https://www.youtube.com/@proxdxdmusic", [], "", "", "", "", [
@@ -40,9 +40,19 @@ export function createPageLayout(topic) {
         elem("a", "", "https://www.instagram.com/proxdxd03.artist", [], "", "", "", "", [
             elem("img", "", "", [], "", "", "/images/ig.png", "", []),
         ]),
-        elem("p", "", "", [], "© 2023 proxdxd03", "", "", "", [])
+        p([], "© 2023 proxdxd03", "", "", [])
     ]))
     loadFromJSON("blogspace", topic)
+}
+
+function getTopicTitle(topic) {
+    switch(topic) {
+        case "home": return "News"
+        case "release": return "Releases"
+        case "concert": return "Concerts"
+        case "misc": return "Other News"
+        case "contact": return "Contact"
+    }
 }
 
 function elem(tagname, rel, href, classnames, innerText, id, src, style, children) {
@@ -56,4 +66,8 @@ function elem(tagname, rel, href, classnames, innerText, id, src, style, childre
     elem.style = style
     children.forEach((child) => {elem.appendChild(child)})
     return elem
+}
+
+function p(classnames, innerText, id, style, children) {
+    return elem("p", "", "", classnames, innerText, id, "", style, children)
 }
