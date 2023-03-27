@@ -92,6 +92,16 @@ a:focus {
     scroll-behavior: smooth;
 }
 
+.noscriptbackground {
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(23, 23, 23);
+    position: relative;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
 .tab {
     font-variant: small-caps;
     padding-top: 4vmin;

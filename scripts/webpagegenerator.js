@@ -56,6 +56,8 @@ function getTopicTitle(topic) {
         case "concert": return "Concerts"
         case "misc": return "Other News"
         case "contact": return "Contact"
+        case "music": return "Music"
+        default: "Something went wrong."
     }
 }
 
