@@ -1,7 +1,7 @@
 import {loadFromJSON} from "/scripts/blogloader.js"
 import {create, elem, div, p, a, img} from "/scripts/htmlutility.js"
 
-export function createPageLayout(topic, specialcontent) {
+export function createPageLayout(topic, specialPage) {
     document.head.appendChild(elem("title", "", "", [], "proxdxd03 - Official Website", "", "", "", []))
     document.head.appendChild(elem("link", "icon", "/images/favicon.png", [], "", "", "", "", []))
     document.body.appendChild(div(["topbar"], "", "topbar", "", [
@@ -42,8 +42,23 @@ export function createPageLayout(topic, specialcontent) {
         ]),
         p([], "© 2023 proxdxd03", "", "", [])
     ]))
-    if(specialcontent.length > 0) {
-        specialcontent.forEach((contentbox) => {document.getElementById("blogspace").appendChild(contentbox.generateElement())})
+    if(specialPage) {
+        $.ajax({
+            type:    "GET",
+            url:     `/posts/special.json`,
+            success: function(json) {
+                switch(topic) {
+                    case "music": 
+                        json.music.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.content, "").generateElement()))
+                        break;
+                    case "contact":
+                        json.contact.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.content, "").generateElement()))
+                }
+            },
+            error:   function() {
+                console.log("BRUH")
+            }
+        })
     }
     else loadFromJSON("blogspace", topic)
 }
