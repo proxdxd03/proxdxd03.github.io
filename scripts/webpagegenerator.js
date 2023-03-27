@@ -3,7 +3,6 @@ import {create, elem, div, p, a, img} from "/scripts/htmlutility.js"
 
 export function createPageLayout(topic, specialcontent) {
     document.head.appendChild(elem("title", "", "", [], "proxdxd03 - Official Website", "", "", "", []))
-    document.head.appendChild(elem("link", "stylesheet", "/style.css", [], "", "", "", "", []))
     document.head.appendChild(elem("link", "icon", "/images/favicon.png", [], "", "", "", "", []))
     document.body.appendChild(div(["topbar"], "", "topbar", "", [
         div(["topleft"], "", "", "", [
