@@ -9,5 +9,15 @@
             "content": "<p><a href=\"https://discord.gg/FG3MTsTKDC\">Discord</a></p><p><a href=\"https://www.instagram.com/proxdxd03.artist\">Instagram</a></p>"
         }
     ],
-    "music": []
+    "music": [
+        {
+            "cap": "Funk You All - Single",
+            "tracks": [
+                {
+                    "name": "Funk You All",
+                    "id": "yzAOu4Q2x7w"
+                }
+            ]
+        }
+    ]
 }

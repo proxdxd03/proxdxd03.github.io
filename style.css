@@ -144,7 +144,6 @@ a:focus {
     box-shadow: 1vmin 1vmin 3vmin 0 rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
-
 }
 
 .imagebox {
@@ -198,6 +197,12 @@ a:focus {
     height: 30vmin;
     padding: 4vmin;
     float: right;
+}
+
+.fullsize_video {
+    padding: 4vmin;
+    width: calc(100vw - 19vmin);
+    height: calc(56.25vw - 10.6875vmin);
 }
 
 /* Footer */
