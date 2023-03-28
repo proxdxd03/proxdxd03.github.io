@@ -52,7 +52,7 @@ export function createPageLayout(topic, specialPage) {
                         json.contact.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.content, "").generateElement()))
                         break;
                     case "music":
-                        json.music.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.tracks.map((track) => `$<p class="date">${track.name}</p><iframe style="fullsize_video" src="https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3" title=${track.name}> allowfullscreen=false`).join(""), "").generateElement()))
+                        json.music.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.tracks.map((track) => `<p class="date">${track.name}</p><iframe style="fullsize_video" src="https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3" title="${track.name}" allowfullscreen=false>`).join(""), "").generateElement()))
                 }
             },
             error:   function() {
