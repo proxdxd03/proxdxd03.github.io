@@ -18,6 +18,31 @@
                     "id": "yzAOu4Q2x7w"
                 }
             ]
+        },
+        {
+            "cap": "Cryo - EP",
+            "tracks": [
+                {
+                    "name": "Heartpulse",
+                    "id": "cGteJUjG0sM"
+                },
+                {
+                    "name": "The Shadow Mask",
+                    "id": "qSTcLg9cR2U"
+                },
+                {
+                    "name": "Translucent Mountain",
+                    "id": "YCU5mHC1yFE"
+                },
+                {
+                    "name": "Fog Dance",
+                    "id": "1LAAWTeKvW8"
+                },
+                {
+                    "name": "Five",
+                    "id": "55Rv8oJK-uQ"
+                }
+            ]
         }
     ]
 }
