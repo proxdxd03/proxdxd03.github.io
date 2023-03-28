@@ -202,20 +202,36 @@ a:focus {
 .videolist_element {
     display: table-row;
     float: left;
-    width: 19vmin;
-    height: 22vmin;
+    width: calc((100vw - 23vmin) / 3);
+    height: min-content;
     padding-bottom: 4vmin;
     padding-right: 4vmin;
 }
 
-.videolist {
-    display: table
+.videocap {
+    color: rgb(191, 191, 191);
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 8vmin;
+    padding-top: 0vmin;
 }
 
+.videolist {
+    display: table;
+    width: calc(100vw - 19vmin);
+}
 
-.fullsize_video {
-    width: 19vmin;
-    height: 19vmin;
+.music_video_wrapper {
+    width: calc((100vw - 23vmin) / 3);
+    height: calc((100vw - 23vmin) / 3);
+}
+
+.music_video {
+    float: bottom;
+    width: calc((100vw - 23vmin) / 3);
+    height: calc((100vw - 23vmin) / 3);
 }
 
 /* Footer */
