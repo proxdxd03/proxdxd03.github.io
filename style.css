@@ -199,10 +199,16 @@ a:focus {
     float: right;
 }
 
+.videolist_element {
+    float: left;
+    width: 19vmin;
+    height: 19vmin;
+    padding: 4vmin
+}
+
 .fullsize_video {
-    padding: 4vmin;
-    width: calc(100vw - 19vmin);
-    height: calc(56.25vw - 10.6875vmin);
+    width: 19vmin;
+    height: 19vmin;
 }
 
 /* Footer */
