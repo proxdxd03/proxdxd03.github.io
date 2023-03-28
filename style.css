@@ -200,11 +200,18 @@ a:focus {
 }
 
 .videolist_element {
+    display: table-row;
     float: left;
     width: 19vmin;
-    height: 19vmin;
-    padding: 4vmin
+    height: 22vmin;
+    padding-bottom: 4vmin;
+    padding-right: 4vmin;
 }
+
+.videolist {
+    display: table
+}
+
 
 .fullsize_video {
     width: 19vmin;
