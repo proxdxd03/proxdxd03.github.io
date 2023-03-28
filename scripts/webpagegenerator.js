@@ -13,6 +13,7 @@ export function createPageLayout(topic, specialPage) {
         ]),
         div(["topright"], "", "", "", [
             a("/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", []),
+            a("/music/", topic === "music" ? ["current"] : [], "Music", "", "", []),
             a("/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", []),
             a("/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", []),
             a("/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", []),

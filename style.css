@@ -201,7 +201,7 @@ a:focus {
 
 .videolist {
     display: table;
-    width: calc(100vw - 19vmin);
+    width: calc(100vw - 15vmin);
     padding-left: 4vmin;
     padding-right: 4vmin;
     padding-bottom: 4vmin;
@@ -210,30 +210,29 @@ a:focus {
 .videolist_element {
     display: table-row;
     float: left;
-    width: calc((100vw - 35vmin) / 3);
+    width: calc((100vw - 27vmin) / 3);
     height: min-content;
     padding-top: 4vmin;
     padding-right: 4vmin;
 }
 
 .videocap {
-    color: rgb(191, 191, 191);
+    color: rgb(255, 255, 255);
     font-size: 1.25rem;
     font-variation-settings: 'wght' 400;
-    line-break: normal;
-    width: calc(100% - 8vmin);
+    width: 100%;
     padding-bottom: 4vmin;
 }
 
 .music_video_wrapper {
-    width: calc((100vw - 35vmin) / 3);
-    height: calc((100vw - 35vmin) / 3);
+    width: calc((100vw - 27vmin) / 3);
+    height: calc((100vw - 27vmin) / 3);
 }
 
 .music_video {
     float: bottom;
-    width: calc((100vw - 35vmin) / 3);
-    height: calc((100vw - 35vmin) / 3);
+    width: calc((100vw - 27vmin) / 3);
+    height: calc((100vw - 27vmin) / 3);
 }
 
 /* Footer */
