@@ -201,7 +201,7 @@ a:focus {
 
 .videolist {
     display: table;
-    width: calc(100vw - 15vmin);
+    width: calc(100vw - 14vmin);
     padding-left: 4vmin;
     padding-right: 4vmin;
     padding-bottom: 4vmin;
