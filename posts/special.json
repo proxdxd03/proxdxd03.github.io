@@ -11,6 +11,23 @@
     ],
     "music": [
         {
+            "cap": "Absentia - Single",
+            "tracks": [
+                {
+                    "name": "Absentia",
+                    "id": "WLCn7hD_0Tw"
+                },
+                {
+                    "name": "Absentia - Electrobeat Remix",
+                    "id": "Vi_LiChsdUI"
+                },
+                {
+                    "name": "Absentia - Radio Edit",
+                    "id": "s0rDQ0H-U50"
+                }
+            ]
+        },
+        {
             "cap": "Funk You All - Single",
             "tracks": [
                 {
