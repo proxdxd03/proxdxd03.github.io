@@ -7,9 +7,30 @@
         {
             "cap": "Social Media",
             "content": "<p><a href=\"https://discord.gg/FG3MTsTKDC\">Discord</a></p><p><a href=\"https://www.instagram.com/proxdxd03.artist\">Instagram</a></p>"
+        },
+        {
+            "cap": "Discord",
+            "content": "<p>proxdxd03#1989</p>"
         }
     ],
     "music": [
+        {
+            "cap": "C.L.A.P - Single",
+            "tracks": [
+                {
+                    "name": "C.L.A.P",
+                    "id": "UpPSr-m2pNY"
+                },
+                {
+                    "name": "C.L.A.P - Percussaw Remix",
+                    "id": "P1WWfyL5qpw"
+                },
+                {
+                    "name": "C.L.A.P - Psytrance Remix",
+                    "id": "pBP6BHrJbeE"
+                }
+            ]
+        },
         {
             "cap": "Absentia - Single",
             "tracks": [
