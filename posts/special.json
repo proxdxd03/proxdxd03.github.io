@@ -15,6 +15,75 @@
     ],
     "music": [
         {
+            "cap": "Photon",
+            "tracks": [
+                {
+                    "name": "Ascension",
+                    "id": "Nx1M9TFAMcM"
+                },
+                {
+                    "name": "Star",
+                    "id": "VbvUDFFYwv0"
+                },
+                {
+                    "name": "Stare",
+                    "id": "2OrXRp-a73g"
+                },
+                {
+                    "name": "Funk You All",
+                    "id": "zJFURiJ6Y3c"
+                },
+                {
+                    "name": "C.L.A.P",
+                    "id": "AAcSCTey44M"
+                },
+                {
+                    "name": "Laser Loop",
+                    "id": "rfpcJ1-34tw"
+                },
+                {
+                    "name": "Tunes of Comfort",
+                    "id": "hff7z-lszZY"
+                },
+                {
+                    "name": "Alternation Program",
+                    "id": "sM3D2gPgkoA"
+                },
+                {
+                    "name": "Freezing Fire",
+                    "id": "KncBcy4AWzI"
+                },
+                {
+                    "name": "Metal Drop Cloud",
+                    "id": "2jpYVpjqtL0"
+                },
+                {
+                    "name": "Harmonify",
+                    "id": "oGMEMMyWjhg"
+                },
+                {
+                    "name": "Absentia",
+                    "id": "3apawc3BncE"
+                },
+                {
+                    "name": "Meditation of Mindfulness",
+                    "id": "kv6vSoK275o"
+                },
+                {
+                    "name": "Photon",
+                    "id": "ZieJqQBJGGI"
+                },
+                {
+                    "name": "Gamma",
+                    "id": "mJLQJ5XSmOw"
+                },
+                {
+                    "name": "Cascading",
+                    "id": "aEyj76qo7W4"
+                }
+            ]
+        },
+        {
             "cap": "C.L.A.P - Single",
             "tracks": [
                 {

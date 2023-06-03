@@ -49,6 +49,12 @@
             "date": "2023 5 31",
             "content": "<p>The upcoming album \"Photon\" is now confirmed to be released to all platforms on June 3rd, 2023. Note down the date to not miss it!</p>",
             "media": "images/20230531_photon.png"
+        },
+        {
+            "cap": "Album \"Photon\" released! Listen on all platforms now!",
+            "date": "2023 6 3",
+            "content": "<p>The new album \"Photon\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Venture on a unique two-hour journey and don't forget to save your favorites to your playlists and library to listen again later!</p>",
+            "media": "images/20230531_photon.png"
         }
     ],
     "concert": [
