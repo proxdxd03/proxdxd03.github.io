@@ -210,7 +210,7 @@ a:focus {
 .videolist_element {
     display: table-row;
     float: left;
-    width: calc((100vw - 27vmin) / 3);
+    width: calc((100vw - 35vmin) / 5);
     height: min-content;
     padding-top: 4vmin;
     padding-right: 4vmin;
@@ -222,17 +222,19 @@ a:focus {
     font-variation-settings: 'wght' 400;
     width: 100%;
     padding-bottom: 4vmin;
+    text-wrap-mode: nowrap;
+    overflow: hidden
 }
 
 .music_video_wrapper {
-    width: calc((100vw - 27vmin) / 3);
-    height: calc((100vw - 27vmin) / 3);
+    width: calc((100vw - 35vmin) / 5);
+    height: calc((100vw - 35vmin) / 5);
 }
 
 .music_video {
     float: bottom;
-    width: calc((100vw - 27vmin) / 3);
-    height: calc((100vw - 27vmin) / 3);
+    width: calc((100vw - 35vmin) / 5);
+    height: calc((100vw - 35vmin) / 5);
 }
 
 /* Footer */
