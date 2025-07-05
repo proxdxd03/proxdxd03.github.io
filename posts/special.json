@@ -11,6 +11,52 @@
     ],
     "music": [
         {
+            "cap": "Rage - Single",
+            "tracks": [
+                {
+                    "name": "Rage",
+                    "id": "ubKmeWhFSaE"
+                },
+                {
+                    "name": "Sad - Echoes Remix",
+                    "id": "XgkDpnB8Vvw"
+                },
+                {
+                    "name": "Sad - Smoother Synth Remix",
+                    "id": "trr9Q5OuTJ0"
+                }
+            ]
+        },
+        {
+            "cap": "Sad - Single",
+            "tracks": [
+                {
+                    "name": "Sad",
+                    "id": "MPHbqDlludI"
+                },
+                {
+                    "name": "Sad - Flow Beats Remix",
+                    "id": "W3iRmqWnk8I"
+                },
+                {
+                    "name": "Sad - Electrobeat Remix",
+                    "id": "7uejXYAgJzA"
+                },
+                {
+                    "name": "Sad - Groove Remix",
+                    "id": "sNUT-kTey4Q"
+                },
+                {
+                    "name": "Sad - Piano Remix",
+                    "id": "KX_mvs4KwIQ"
+                },
+                {
+                    "name": "Sad - Melancholy Remix",
+                    "id": "aYfeR-f-6Z0"
+                }
+            ]
+        },
+        {
             "cap": "Photon",
             "tracks": [
                 {
