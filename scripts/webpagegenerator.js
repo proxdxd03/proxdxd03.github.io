@@ -58,14 +58,19 @@ export function createPageLayout(topic, specialPage) {
                             document.getElementById("blogspace").appendChild(
                                 div(["contentbox"], "", "", "", [
                                     p(["cap"], box.cap, "", "", []),
-                                    div(["videolist"], "", "", "", box.tracks.map((track) => 
+                                    box.type === "album" ? div(["videolist"], "", "", "", box.tracks.map((track) => 
                                         div(["videolist_element"], "", "", "", [
                                             p(["videocap"], track.name, "", "", []),
                                             div(["music_video_wrapper"], "", "", "", [
                                                 elem("iframe", "", "", ["music_video"], "", "", `https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3`, "", [])
                                             ])
                                         ])
-                                    ))
+                                    )) : div(["spotlight"], "", "", "", [
+                                            p(["videocap"], box.tracks[0].name, "", "", []),
+                                            div(["music_video_spotlight"], "", "", "", [
+                                                elem("iframe", "", "", ["iframe_spotlight"], "", "", `https://www.youtube.com/embed/${box.tracks[0].id}?rel=0&iv_load_policy=3`, "", [])
+                                            ])
+                                    ])
                                 ])
                             )
                         })

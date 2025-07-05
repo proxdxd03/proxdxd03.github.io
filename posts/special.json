@@ -11,7 +11,18 @@
     ],
     "music": [
         {
+            "cap": "Rage (MIDI Chip Visualizer)",
+            "type": "spotlight",
+            "tracks": [
+                {
+                    "name": "Rage",
+                    "id": "70dJMO6Lkr0"
+                }
+            ]
+        },
+        {
             "cap": "Rage - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Rage",
@@ -29,6 +40,7 @@
         },
         {
             "cap": "Sad - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Sad",
@@ -58,6 +70,7 @@
         },
         {
             "cap": "Rebass Technology - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Rebass Technology",
@@ -67,6 +80,7 @@
         },
         {
             "cap": "Photon",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Ascension",
@@ -136,6 +150,7 @@
         },
         {
             "cap": "C.L.A.P - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "C.L.A.P",
@@ -153,6 +168,7 @@
         },
         {
             "cap": "Absentia - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Absentia",
@@ -170,6 +186,7 @@
         },
         {
             "cap": "Funk You All - Single",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Funk You All",
@@ -179,6 +196,7 @@
         },
         {
             "cap": "Cryo - EP",
+            "type": "album",
             "tracks": [
                 {
                     "name": "Heartpulse",
