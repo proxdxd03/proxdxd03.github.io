@@ -26,15 +26,18 @@
             "tracks": [
                 {
                     "name": "Rage",
-                    "id": "ubKmeWhFSaE"
+                    "id": "ubKmeWhFSaE",
+                    "thumbnail": "20250705_circuitsoulrage.jpg"
                 },
                 {
-                    "name": "Sad - Echoes Remix",
-                    "id": "XgkDpnB8Vvw"
+                    "name": "Rage - Echoes Remix",
+                    "id": "XgkDpnB8Vvw",
+                    "thumbnail": "20250705_circuitsoulrage.jpg"
                 },
                 {
-                    "name": "Sad - Smoother Synth Remix",
-                    "id": "trr9Q5OuTJ0"
+                    "name": "Rage - Smoother Synth Remix",
+                    "id": "trr9Q5OuTJ0",
+                    "thumbnail": "20250705_circuitsoulrage.jpg"
                 }
             ]
         },

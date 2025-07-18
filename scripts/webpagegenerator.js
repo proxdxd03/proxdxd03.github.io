@@ -1,9 +1,9 @@
 import {loadFromJSON} from "/scripts/blogloader.js"
-import {create, elem, div, p, a, img} from "/scripts/htmlutility.js"
+import {create, elem, div, p, a, img, button} from "/scripts/htmlutility.js"
 
 export function createPageLayout(topic, specialPage) {
-    document.head.appendChild(elem("title", "", "", [], "proxdxd03 - Official Website", "", "", "", []))
-    document.head.appendChild(elem("link", "icon", "/images/favicon.png", [], "", "", "", "", []))
+    document.head.appendChild(elem("title", "", "", [], "proxdxd03 - Official Website", "", "", "", "", []))
+    document.head.appendChild(elem("link", "icon", "/images/favicon.png", [], "", "", "", "", "", []))
     document.body.appendChild(div(["topbar"], "", "topbar", "", [
         div(["topleft"], "", "", "", [
             a("/", [], "", "", "", [
@@ -62,13 +62,15 @@ export function createPageLayout(topic, specialPage) {
                                         div(["videolist_element"], "", "", "", [
                                             p(["videocap"], track.name, "", "", []),
                                             div(["music_video_wrapper"], "", "", "", [
-                                                elem("iframe", "", "", ["music_video"], "", "", `https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3`, "", [])
+                                                button(["mv_thumbnail"], "", "", "", loadIframe(this, track.id), [
+                                                    img("", "", `/images/${track.thumbnail}`, "")
+                                                ])
                                             ])
                                         ])
                                     )) : div(["spotlight"], "", "", "", [
                                             p(["videocap"], box.tracks[0].name, "", "", []),
                                             div(["music_video_spotlight"], "", "", "", [
-                                                elem("iframe", "", "", ["iframe_spotlight"], "", "", `https://www.youtube.com/embed/${box.tracks[0].id}?rel=0&iv_load_policy=3`, "", [])
+                                                elem("iframe", "", "", ["iframe_spotlight"], "", "", `https://www.youtube.com/embed/${box.tracks[0].id}?rel=0&iv_load_policy=3`, "", "", [])
                                             ])
                                     ])
                                 ])
@@ -82,6 +84,10 @@ export function createPageLayout(topic, specialPage) {
         })
     }
     else loadFromJSON("blogspace", topic)
+}
+
+function loadIframe(element, ytid) {
+    element.outerHTML = elem("iframe", "", "", ["music_video"], "", "", `https://www.youtube.com/embed/${ytid}?rel=0&iv_load_policy=3`, "", "", [])
 }
 
 function getTopicTitle(topic) {

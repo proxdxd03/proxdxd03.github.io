@@ -8,7 +8,7 @@ export function create(htmlStr) {
     return frag;
 }
 
-export function elem(tagname, rel, href, classnames, innerText, id, src, style, children) {
+export function elem(tagname, rel, href, classnames, innerText, id, src, style, onclick, children) {
     let elem = document.createElement(tagname)
     elem.rel = rel
     elem.href = href
@@ -17,22 +17,27 @@ export function elem(tagname, rel, href, classnames, innerText, id, src, style, 
     elem.id = id
     elem.src = src
     elem.style = style
+    if (onclick !== null) elem.addEventListener("click", onclick);
     children.forEach((child) => {elem.appendChild(child)})
     return elem
 }
 
 export function div(classnames, innerText, id, style, children) {
-    return elem("div", "", "", classnames, innerText, id, "", style, children)
+    return elem("div", "", "", classnames, innerText, id, "", style, null, children)
 }
 
 export function p(classnames, innerText, id, style, children) {
-    return elem("p", "", "", classnames, innerText, id, "", style, children)
+    return elem("p", "", "", classnames, innerText, id, "", style, null, children)
 }
 
 export function a(href, classnames, innerText, id, style, children) {
-    return elem("a", "", href, classnames, innerText, id, "", style, children)
+    return elem("a", "", href, classnames, innerText, id, "", style, null, children)
 }
 
 export function img(classnames, id, src, style) {
-    return elem("img", "", "", classnames, "", id, src, style, [])
+    return elem("img", "", "", classnames, "", id, src, style, null, [])
+}
+
+export function button(classnames, innerText, id, style, onclick, children) {
+    return elem("button", "", "", classnames, innerText, id, "", style, onclick, children)
 }
