@@ -11,12 +11,39 @@
     ],
     "music": [
         {
+            "cap": "Cloud Castle (MIDI Chip Visualizer)",
+            "type": "spotlight",
+            "track": {
+                "id": "jLbu2wbwXFI"
+            }
+        },
+        {
             "cap": "Rage (MIDI Chip Visualizer)",
             "type": "spotlight",
+            "track": {
+                "id": "70dJMO6Lkr0"
+            }
+        },
+        {
+            "cap": "Sad (MIDI Chip Visualizer)",
+            "type": "spotlight",
+            "track": {
+                "id": "ar-UnLUDhSI"
+            }
+        },
+        {
+            "cap": "Cloud Castle - Single",
+            "type": "album",
             "tracks": [
                 {
-                    "name": "Rage",
-                    "id": "70dJMO6Lkr0"
+                    "name": "Cloud Castle",
+                    "id": "jpheWwtjzKE",
+                    "thumbnail": "20250719_circuitsoulcloudcastle.jpg"
+                },
+                {
+                    "name": "Synth Remix",
+                    "id": "S6QDMHp3bjY",
+                    "thumbnail": "20250719_circuitsoulcloudcastle.jpg"
                 }
             ]
         },
@@ -47,27 +74,33 @@
             "tracks": [
                 {
                     "name": "Sad",
-                    "id": "MPHbqDlludI"
+                    "id": "MPHbqDlludI",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Flow Beats Remix",
-                    "id": "W3iRmqWnk8I"
+                    "id": "W3iRmqWnk8I",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Electrobeat Remix",
-                    "id": "7uejXYAgJzA"
+                    "id": "7uejXYAgJzA",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Groove Remix",
-                    "id": "sNUT-kTey4Q"
+                    "id": "sNUT-kTey4Q",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Piano Remix",
-                    "id": "KX_mvs4KwIQ"
+                    "id": "KX_mvs4KwIQ",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Melancholy Remix",
-                    "id": "aYfeR-f-6Z0"
+                    "id": "aYfeR-f-6Z0",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 }
             ]
         },
@@ -77,7 +110,8 @@
             "tracks": [
                 {
                     "name": "Rebass Technology",
-                    "id": "lKKUhzxodcI"
+                    "id": "lKKUhzxodcI",
+                    "thumbnail": "20240809_rebasstechnology.jpg"
                 }
             ]
         },
@@ -87,67 +121,83 @@
             "tracks": [
                 {
                     "name": "Ascension",
-                    "id": "Nx1M9TFAMcM"
+                    "id": "Nx1M9TFAMcM",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Star",
-                    "id": "VbvUDFFYwv0"
+                    "id": "VbvUDFFYwv0",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Stare",
-                    "id": "2OrXRp-a73g"
+                    "id": "2OrXRp-a73g",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Funk You All",
-                    "id": "zJFURiJ6Y3c"
+                    "id": "zJFURiJ6Y3c",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "C.L.A.P",
-                    "id": "AAcSCTey44M"
+                    "id": "AAcSCTey44M",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Laser Loop",
-                    "id": "rfpcJ1-34tw"
+                    "id": "rfpcJ1-34tw",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Tunes of Comfort",
-                    "id": "hff7z-lszZY"
+                    "id": "hff7z-lszZY",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Alternation Program",
-                    "id": "sM3D2gPgkoA"
+                    "id": "sM3D2gPgkoA",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Freezing Fire",
-                    "id": "KncBcy4AWzI"
+                    "id": "KncBcy4AWzI",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Metal Drop Cloud",
-                    "id": "2jpYVpjqtL0"
+                    "id": "2jpYVpjqtL0",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Harmonify",
-                    "id": "oGMEMMyWjhg"
+                    "id": "oGMEMMyWjhg",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Absentia",
-                    "id": "3apawc3BncE"
+                    "id": "3apawc3BncE",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Meditation of Mindfulness",
-                    "id": "kv6vSoK275o"
+                    "id": "kv6vSoK275o",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Photon",
-                    "id": "ZieJqQBJGGI"
+                    "id": "ZieJqQBJGGI",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Gamma",
-                    "id": "mJLQJ5XSmOw"
+                    "id": "mJLQJ5XSmOw",
+                    "thumbnail": "20230531_photon.png"
                 },
                 {
                     "name": "Cascading",
-                    "id": "aEyj76qo7W4"
+                    "id": "aEyj76qo7W4",
+                    "thumbnail": "20230531_photon.png"
                 }
             ]
         },
@@ -175,15 +225,18 @@
             "tracks": [
                 {
                     "name": "Absentia",
-                    "id": "WLCn7hD_0Tw"
+                    "id": "WLCn7hD_0Tw",
+                    "thumbnail": "20230305_absentia.png"
                 },
                 {
                     "name": "Electrobeat Remix",
-                    "id": "Vi_LiChsdUI"
+                    "id": "Vi_LiChsdUI",
+                    "thumbnail": "20230305_absentia.png"
                 },
                 {
                     "name": "Radio Edit",
-                    "id": "s0rDQ0H-U50"
+                    "id": "s0rDQ0H-U50",
+                    "thumbnail": "20230305_absentia.png"
                 }
             ]
         },
@@ -193,7 +246,8 @@
             "tracks": [
                 {
                     "name": "Funk You All",
-                    "id": "yzAOu4Q2x7w"
+                    "id": "yzAOu4Q2x7w",
+                    "thumbnail": "20230225_funk_you_all.png"
                 }
             ]
         },

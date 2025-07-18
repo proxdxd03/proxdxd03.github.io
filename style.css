@@ -206,7 +206,8 @@ a:focus {
 }
 
 .music_video_spotlight {
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
     aspect-ratio: 1.7777778;
 }
 

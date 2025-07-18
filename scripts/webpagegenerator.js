@@ -54,7 +54,7 @@ export function createPageLayout(topic, specialPage) {
                         break;
                     case "music":
                         json.music.forEach((box) => {
-                            let cbox = new Contentbox(box.cap, "", "<div class=\"videolist\">" + box.tracks.map((track) => `<div class="videolist_element"><p class="date">${track.name}</p><iframe class="fullsize_video" src="https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3" title="${track.name}" allowfullscreen="false"></div>`).join("") + "</div>", "").generateElement()
+                            //let cbox = new Contentbox(box.cap, "", "<div class=\"videolist\">" + box.tracks.map((track) => `<div class="videolist_element"><p class="date">${track.name}</p><iframe class="fullsize_video" src="https://www.youtube.com/embed/${track.id}?rel=0&iv_load_policy=3" title="${track.name}" allowfullscreen="false"></div>`).join("") + "</div>", "").generateElement()
                             document.getElementById("blogspace").appendChild(
                                 div(["contentbox"], "", "", "", [
                                     p(["cap"], box.cap, "", "", []),
@@ -68,9 +68,8 @@ export function createPageLayout(topic, specialPage) {
                                             ])
                                         ])
                                     )) : div(["spotlight"], "", "", "", [
-                                            p(["videocap"], box.tracks[0].name, "", "", []),
                                             div(["music_video_spotlight"], "", "", "", [
-                                                elem("iframe", "", "", ["iframe_spotlight"], "", "", `https://www.youtube.com/embed/${box.tracks[0].id}?rel=0&iv_load_policy=3`, "", [], [])
+                                                elem("iframe", "", "", ["iframe_spotlight"], "", "", `https://www.youtube.com/embed/${box.track.id}?rel=0&iv_load_policy=3`, "", [], [])
                                             ])
                                     ])
                                 ])
