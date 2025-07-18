@@ -47,27 +47,33 @@
             "tracks": [
                 {
                     "name": "Sad",
-                    "id": "MPHbqDlludI"
+                    "id": "MPHbqDlludI",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Flow Beats Remix",
-                    "id": "W3iRmqWnk8I"
+                    "id": "W3iRmqWnk8I",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Electrobeat Remix",
-                    "id": "7uejXYAgJzA"
+                    "id": "7uejXYAgJzA",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Groove Remix",
-                    "id": "sNUT-kTey4Q"
+                    "id": "sNUT-kTey4Q",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Piano Remix",
-                    "id": "KX_mvs4KwIQ"
+                    "id": "KX_mvs4KwIQ",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 },
                 {
                     "name": "Melancholy Remix",
-                    "id": "aYfeR-f-6Z0"
+                    "id": "aYfeR-f-6Z0",
+                    "thumbnail": "20250705_circuitsoulsad.jpg"
                 }
             ]
         },
