@@ -17,25 +17,25 @@ export function elem(tagname, rel, href, classnames, innerText, id, src, style, 
     elem.id = id
     elem.src = src
     elem.style = style
-    if (onclick !== null) elem.addEventListener("click", onclick);
+    elem.onclick = onclick
     children.forEach((child) => {elem.appendChild(child)})
     return elem
 }
 
 export function div(classnames, innerText, id, style, children) {
-    return elem("div", "", "", classnames, innerText, id, "", style, null, children)
+    return elem("div", "", "", classnames, innerText, id, "", style, "", children)
 }
 
 export function p(classnames, innerText, id, style, children) {
-    return elem("p", "", "", classnames, innerText, id, "", style, null, children)
+    return elem("p", "", "", classnames, innerText, id, "", style, "", children)
 }
 
 export function a(href, classnames, innerText, id, style, children) {
-    return elem("a", "", href, classnames, innerText, id, "", style, null, children)
+    return elem("a", "", href, classnames, innerText, id, "", style, "", children)
 }
 
 export function img(classnames, id, src, style) {
-    return elem("img", "", "", classnames, "", id, src, style, null, [])
+    return elem("img", "", "", classnames, "", id, src, style, "", [])
 }
 
 export function button(classnames, innerText, id, style, onclick, children) {

@@ -62,7 +62,7 @@ export function createPageLayout(topic, specialPage) {
                                         div(["videolist_element"], "", "", "", [
                                             p(["videocap"], track.name, "", "", []),
                                             div(["music_video_wrapper"], "", "", "", [
-                                                button(["mv_thumbnail"], "", "", "", loadIframe(this, track.id), [
+                                                button(["mv_thumbnail"], "", "", "", `loadIframe(elem, \`${track.id}\`)`, [
                                                     img("", "", `/images/${track.thumbnail}`, "")
                                                 ])
                                             ])
