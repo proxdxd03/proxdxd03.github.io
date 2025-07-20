@@ -24,7 +24,7 @@
             "cap": "Single \"Funk You All\" released! Listen on all platforms now!",
             "date": "2023 3 11",
             "content": "<p>The single \"Funk You All\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Get vibing to the chill bass melodies, have fun and don't forget to save it to your playlists and library to listen again later!</p>",
-            "media": "yt/yzAOu4Q2x7w:Funk You All"
+            "media": "yt/yzAOu4Q2x7w:Funk You All:20230225_funk_you_all.png"
         },
         {
             "cap": "Single \"Absentia\" confirmed",
@@ -36,13 +36,13 @@
             "cap": "Single \"Absentia\" released! Listen on all platforms now!",
             "date": "2023 4 1",
             "content": "<p>The single \"Absentia\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Listen to the relaxing slow chords and don't forget to save it to your playlists and library to listen again later!</p>",
-            "media": "yt/WLCn7hD_0Tw:Absentia"
+            "media": "yt/WLCn7hD_0Tw:Absentia:20230305_absentia.png"
         },
         {
             "cap": "Single \"C.L.A.P\" released! Listen on all platforms now!",
             "date": "2023 4 29",
             "content": "<p>The final pre-single \"C.L.A.P\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Enjoy the funky beats, have a nice time and don't forget to save it to your playlists and library to listen again later!</p>",
-            "media": "yt/UpPSr-m2pNY:C.L.A.P"
+            "media": "yt/UpPSr-m2pNY:C.L.A.P:20230306_clap.png"
         },
         {
             "cap": "Album \"Photon\" confirmed",
@@ -54,31 +54,37 @@
             "cap": "Album \"Photon\" released! Listen on all platforms now!",
             "date": "2023 6 3",
             "content": "<p>The new album \"Photon\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Venture on a unique two-hour journey and don't forget to save your favorites to your playlists and library to listen again later!</p>",
-            "media": "yt/Nx1M9TFAMcM:Ascension"
+            "media": "yt/Nx1M9TFAMcM:Ascension:20230531_photon.png"
         },
         {
             "cap": "Single \"Psychward\" pre-released on YouTube! Listen now!",
             "date": "2023 7 1",
             "content": "<p>OTFT's single \"Psychward\" featuring proxdxd03 and Noble is now available on YouTube! Listen to the stories from the psychward and don't forget to save your favorites to your playlists and library to listen again later!</p>",
-            "media": "yt/tUeh17MmrLU:Psychward"
+            "media": "yt/tUeh17MmrLU:Psychward:20230701_psychward.jpg"
         },
         {
             "cap": "Single \"Rebass Technology\" released! Listen on all platforms now!",
             "date": "2024 8 3",
             "content": "<p>The single \"Rebass Technology\" is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Listen to an ever changing bass line and add it to your playlists!</p>",
-            "media": "yt/lKKUhzxodcI:Rebass Technology"
+            "media": "yt/lKKUhzxodcI:Rebass Technology:20240809_rebasstechnology.jpg"
         },
         {
             "cap": "Single \"Sad\" released! Listen on all platforms now!",
             "date": "2025 7 5",
             "content": "<p>The single \"Sad\" of \"Circuit Soul\", proxdxd03's newest music project, is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Listen to six versions of the melancholic song and add them to your playlists!</p>",
-            "media": "yt/ar-UnLUDhSI:Sad"
+            "media": "yt/ar-UnLUDhSI:Sad:20250705_circuitsoulsad.jpg"
         },
         {
             "cap": "Single \"Rage\" released! Listen on all platforms now!",
             "date": "2025 7 5",
             "content": "<p>The single \"Rage\" of \"Circuit Soul\", proxdxd03's newest music project, is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Listen to three versions of the trance adventure and add them to your playlists!</p>",
-            "media": "yt/70dJMO6Lkr0:Rage"
+            "media": "yt/70dJMO6Lkr0:Rage:20250705_circuitsoulrage.jpg"
+        },
+        {
+            "cap": "Single \"Cloud Castle\" released! Listen on all platforms now!",
+            "date": "2025 7 19",
+            "content": "<p>The single \"Cloud Castle\" of \"Circuit Soul\", proxdxd03's newest music project, is now available on Spotify, Apple Music, YouTube, YouTube Music and Amazon Music! Listen to two versions of the piano tune and add them to your playlists!</p>",
+            "media": "yt/jpheWwtjzKE:Cloud Castle:20250719_circuitsoulcloudcastle.jpg"
         }
     ],
     "concert": [

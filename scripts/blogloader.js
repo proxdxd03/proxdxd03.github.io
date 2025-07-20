@@ -1,4 +1,9 @@
-import {create} from "/scripts/htmlutility.js"
+import {create, elem, div, p, a, img, button} from "/scripts/htmlutility.js"
+
+function loadPostIframe(ytid) {
+    let video = elem("iframe", "", "", ["post_video"], "", "", `https://www.youtube.com/embed/${ytid}?rel=0&iv_load_policy=3`, "", [], []).outerHTML
+    return (element) => element.outerHTML = video
+}
 
 export function loadFromJSON(elementId, category) {
     $.ajax({
@@ -59,15 +64,12 @@ function loadByJSON(elementId, array) {
         content.appendChild(create(post.content))
         if(post.media !== "") {
             if(post.media.slice(0,3) === "yt/") {
-                let video = document.createElement("iframe")
                 let videoprops = post.media.slice(3).split(":")
-                video.src = `https://www.youtube.com/embed/${videoprops[0]}?rel=0&iv_load_policy=3`
-                video.title = videoprops[1]
-                video.allowFullscreen = false
-                video.className = "post_video"
                 let contentbox = document.createElement("div")
                 contentbox.className = "contentbox videobox"
-                contentbox.appendChild(video)
+                contentbox.appendChild(button(["post_thumbnail"], "", "", "", loadPostIframe(videoprops[0]), [
+                        img("", "", `/images/${videoprops[2]}`, "")
+                    ]))
                 contentbox.appendChild(cap)
                 contentbox.appendChild(date)
                 contentbox.appendChild(content)

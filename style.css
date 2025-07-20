@@ -296,6 +296,19 @@ a:focus {
     width: 100%;
 }
 
+.post_thumbnail {
+    width: 30vmin;
+    height: 30vmin;
+    margin: 4vmin;
+    float: right;
+    border: 0px;
+    background: #000;
+}
+
+.post_thumbnail img {
+    width: 100%;
+}
+
 .lyrics {
     font-size: 1.25rem;
     color: rgb(255, 255, 255);

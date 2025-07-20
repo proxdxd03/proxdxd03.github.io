@@ -100,6 +100,11 @@ function loadIframe(ytid) {
     return (element) => element.outerHTML = elem("iframe", "", "", ["music_video"], "", "", `https://www.youtube.com/embed/${ytid}?rel=0&iv_load_policy=3`, "", [], []).outerHTML
 }
 
+function loadPostIframe(ytid) {
+    let video = elem("iframe", "", "", ["post_video"], "", "", `https://www.youtube.com/embed/${ytid}?rel=0&iv_load_policy=3`, "", [], []).outerHTML
+    return (element) => element.outerHTML = video
+}
+
 function getTopicTitle(topic) {
     switch(topic) {
         case "home": return "News"
@@ -139,15 +144,12 @@ export class Contentbox {
         content.appendChild(create(this.content))
         if(this.media !== "") {
             if(this.media.slice(0,3) === "yt/") {
-                let video = document.createElement("iframe")
                 let videoprops = this.media.slice(3).split(":")
-                video.src = `https://www.youtube.com/embed/${videoprops[0]}?rel=0&iv_load_policy=3`
-                video.title = videoprops[1]
-                video.allowFullscreen = false
-                video.className = "post_video"
                 let contentbox = document.createElement("div")
                 contentbox.className = "contentbox videobox"
-                contentbox.appendChild(video)
+                contentbox.appendChild(button(["post_thumbnail"], "", "", "", loadPostIframe(videoprops[0]), [
+                        img("", "", `/images/${videoprops[2]}`, "")
+                    ]))
                 contentbox.appendChild(cap)
                 contentbox.appendChild(date)
                 contentbox.appendChild(content)
