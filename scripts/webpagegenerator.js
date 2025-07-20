@@ -13,10 +13,11 @@ export function createPageLayout(topic, specialPage) {
         ]),
         div(["topright"], "", "", "", [
             a("/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", []),
+            a("/lyrics/", topic === "lyrics" ? ["current"] : [], "Lyrics", "", "", []),
             a("/music/", topic === "music" ? ["current"] : [], "Music", "", "", []),
             a("/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", []),
             a("/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", []),
-            a("/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", []),
+            a("/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", [])
         ])
     ]))
     document.body.appendChild(div(["scrollbody"], "", "blogspace", "", [
@@ -49,6 +50,16 @@ export function createPageLayout(topic, specialPage) {
             url:     `/posts/special.json`,
             success: function(json) {
                 switch(topic) {
+                    case "lyrics":
+                        json.lyrics.forEach((text) => 
+                            document.getElementById("blogspace").appendChild(
+                                div(["contentbox"], "", "", "", [
+                                    p(["cap"], text.name, "", "", []),
+                                    div(["lyrics"], text.text, "", "", [])
+                                ])
+                            )
+                        )
+                        break;
                     case "contact": 
                         json.contact.forEach((box) => document.getElementById("blogspace").appendChild(new Contentbox(box.cap, "", box.content, "").generateElement()))
                         break;
@@ -97,6 +108,7 @@ function getTopicTitle(topic) {
         case "misc": return "Other News"
         case "contact": return "Contact"
         case "music": return "Music"
+        case "lyrics": return "Lyrics"
         default: "Something went wrong."
     }
 }

@@ -296,6 +296,18 @@ a:focus {
     width: 100%;
 }
 
+.lyrics {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 14vmin);
+    padding-left: 10vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+    padding-top: 1vmin;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 1vmin;
