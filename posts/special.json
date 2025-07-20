@@ -207,15 +207,18 @@
             "tracks": [
                 {
                     "name": "C.L.A.P",
-                    "id": "UpPSr-m2pNY"
+                    "id": "UpPSr-m2pNY",
+                    "thumbnail": "20230306_clap.png"
                 },
                 {
                     "name": "Percussaw Remix",
-                    "id": "P1WWfyL5qpw"
+                    "id": "P1WWfyL5qpw",
+                    "thumbnail": "20230306_clap.png"
                 },
                 {
                     "name": "Psytrance Remix",
-                    "id": "pBP6BHrJbeE"
+                    "id": "pBP6BHrJbeE",
+                    "thumbnail": "20230306_clap.png"
                 }
             ]
         },
@@ -257,23 +260,28 @@
             "tracks": [
                 {
                     "name": "Heartpulse",
-                    "id": "cGteJUjG0sM"
+                    "id": "cGteJUjG0sM",
+                    "thumbnail": "20221211_cryo.jpg"
                 },
                 {
                     "name": "The Shadow Mask",
-                    "id": "qSTcLg9cR2U"
+                    "id": "qSTcLg9cR2U",
+                    "thumbnail": "20221211_cryo.jpg"
                 },
                 {
                     "name": "Translucent Mountain",
-                    "id": "YCU5mHC1yFE"
+                    "id": "YCU5mHC1yFE",
+                    "thumbnail": "20221211_cryo.jpg"
                 },
                 {
                     "name": "Fog Dance",
-                    "id": "1LAAWTeKvW8"
+                    "id": "1LAAWTeKvW8",
+                    "thumbnail": "20221211_cryo.jpg"
                 },
                 {
                     "name": "Five",
-                    "id": "55Rv8oJK-uQ"
+                    "id": "55Rv8oJK-uQ",
+                    "thumbnail": "20221211_cryo.jpg"
                 }
             ]
         }

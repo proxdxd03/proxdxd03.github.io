@@ -209,6 +209,7 @@ a:focus {
     width: 80%;
     padding-left: 10%;
     aspect-ratio: 1.7777778;
+    padding-top: 3vmin;
 }
 
 .iframe_spotlight {
