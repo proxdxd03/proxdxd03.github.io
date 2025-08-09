@@ -11,6 +11,47 @@
     ],
     "music": [
         {
+            "cap": "Circuit Soul - Intention",
+            "type": "album",
+            "tracks": [
+                {
+                    "name": "Intro",
+                    "id": "0n-aMnpaO90",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Flying",
+                    "id": "XgkDpnB8Vvw",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Sad",
+                    "id": "v61FT2P2IrY",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Duality",
+                    "id": "A8Exvi4czPw",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Snow",
+                    "id": "J9PPNajo7A4",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Regeneration",
+                    "id": "KKLNRyWa4W4",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                },
+                {
+                    "name": "Sine",
+                    "id": "IWdOQ0-gBsY",
+                    "thumbnail": "20250809_circuitsoulintention.jpg"
+                }
+            ]
+        },
+        {
             "cap": "Cloud Castle (MIDI Chip Visualizer)",
             "type": "spotlight",
             "track": {
@@ -290,6 +331,19 @@
         {
             "name": "Sad",
             "text": "...\n\nI'm kinda sad\nCause I feel lonely\nI'm kinda sad\nI think I miss you\nI just want to know\nDid I really not make\na mistake\nthat made you leave me?\n\nI would never hurt you\nI just want you to be glad\nAnd if you would want to\nBe happy with me together\n\n...\n\nWe were happy\nI know that you were too\nNow it is falling apart\nYou said it's only \nFor a little while\nYet you seem to struggle \nBuilding your trust back\n\nI would never hurt you\nI just want you to be glad\nAnd if you would want to\nBe happy with me together\n\n...\n\nStanding by the window\nWatching rain fall\nMy life will evolve\nAnd happier days will come\n\n..."
+        },
+        {
+            "name": "Flying",
+            "text": "I'm flying\nI'm flying\nWhere will I go?\nI'm flying\nFlying\n\nWhere will my wings take me?\nI'm flying\nFlying\nFlying\nWhere will I go?\n\nI left my nest\nI approach a new future\nI find my way\nI'm flying higher than ever before\n\nI'm flying\nFlying\nFlying\nFlying\nWhere will I go?\n\n...\n\nI'm flying\nFlying\nFlying\nFlying, Flying\nFlying, Flying\nFlying, Flying\nFlying, Flying\nI'm flying\n\nWhere will I go?\n\nI've seen so many mountains\nAnd I've seen so many valleys\nYet I don't know\nWhere I am gonna stay\nFor now I just continue flying forward\nFinding what the future's hiding for next day\nFinding what the future's hiding for next day\n\nI'm flying"
+        },
+        {
+            "name": "Snow",
+            "text": "We haven't had snow in a long time\nIt really calms me down and makes me hope for more\nThe landscape covered white\nReplenish all my inner peace\nAnd all the past is washed away\nSo I can carry on\n\nThe wind is flowing lightly\nThe moon is watching me\nWhile I stride through the streets down here\nI am what I want to be\nThe cold is freezing anything\nI used to pretend to need\nAnd all the past is washed away\nSo I can carry on"
+        },
+        {
+            "name": "Regeneration",
+            "text": "Feel the sun again\nHeat is coming back to earth\nI feel the life again\nFeel alive again\n\nLeaves are growing back\nLook up, the sky is blue again\nFeel the life again\nFeel alive again\n\nSunrays on the skin\nIs it such a sin\nTo like just what surrounds us here\nTo need just what surrounds us here\n\nThis life will be spent well\nThough it's difficult sometimes\n\n...\n\nMy mind is still a wreck\nScared the cold will take me back\nFeel the life again\nI want to feel alive again\n\nFrozen lungs and frozen mind\nNumbing that i sought to find\nI want to feel alive again\nI'm going to feel alive again\n\nThe planets breaking down\nWe have dictators all around\nIf u smash a gem in two\nRemember to take as much as you can\nAnd the planets melting down\nLet's just burn it even more\nDesperation is the best fuel after all\n\nAnd the sun will rise again\nAnd the earth will turn again\nI want to feel the life still\nI'll try to feel alive still"
         }
+
     ]
 }
