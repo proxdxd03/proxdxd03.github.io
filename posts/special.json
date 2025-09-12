@@ -11,6 +11,59 @@
     ],
     "music": [
         {
+            "cap": "Lookout (MIDI Chip Visualizer)",
+            "type": "spotlight",
+            "track": {
+                "id": "x1tftJCzEuw"
+            }
+        },
+        {
+            "cap": "Circuit Soul - Immersion",
+            "type": "album",
+            "tracks": [
+                {
+                    "name": "Lookout",
+                    "id": "x1tftJCzEuw",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Dynamics",
+                    "id": "vD_cG91JPhw",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Rage",
+                    "id": "70dJMO6Lkr0",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Running in the Shadows",
+                    "id": "-IlP5IpFvH4",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Neuron",
+                    "id": "xlHdMvuE-Do",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Remains of Us",
+                    "id": "y4nXTdTUrWo",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Sweep",
+                    "id": "BXUi8Q708bs",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                },
+                {
+                    "name": "Square",
+                    "id": "sess-2ryhGo",
+                    "thumbnail": "20250830_circuitsoulimmersion.jpg"
+                }
+            ]
+        },
+        {
             "cap": "Circuit Soul - Intention",
             "type": "album",
             "tracks": [
@@ -21,12 +74,12 @@
                 },
                 {
                     "name": "Flying",
-                    "id": "XgkDpnB8Vvw",
+                    "id": "v61FT2P2IrY",
                     "thumbnail": "20250809_circuitsoulintention.jpg"
                 },
                 {
                     "name": "Sad",
-                    "id": "v61FT2P2IrY",
+                    "id": "MPHbqDlludI",
                     "thumbnail": "20250809_circuitsoulintention.jpg"
                 },
                 {
@@ -50,27 +103,6 @@
                     "thumbnail": "20250809_circuitsoulintention.jpg"
                 }
             ]
-        },
-        {
-            "cap": "Cloud Castle (MIDI Chip Visualizer)",
-            "type": "spotlight",
-            "track": {
-                "id": "jLbu2wbwXFI"
-            }
-        },
-        {
-            "cap": "Rage (MIDI Chip Visualizer)",
-            "type": "spotlight",
-            "track": {
-                "id": "70dJMO6Lkr0"
-            }
-        },
-        {
-            "cap": "Sad (MIDI Chip Visualizer)",
-            "type": "spotlight",
-            "track": {
-                "id": "ar-UnLUDhSI"
-            }
         },
         {
             "cap": "Cloud Castle - Single",
