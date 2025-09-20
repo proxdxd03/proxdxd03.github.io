@@ -12,6 +12,7 @@ export function createPageLayout(topic, specialPage) {
             ])
         ]),
         div(["topright"], "", "", "", [
+            a("/about/", topic === "about" ? ["current"] : [], "About me", "", "", []),
             a("/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", []),
             a("/lyrics/", topic === "lyrics" ? ["current"] : [], "Lyrics", "", "", []),
             a("/music/", topic === "music" ? ["current"] : [], "Music", "", "", []),
@@ -50,6 +51,11 @@ export function createPageLayout(topic, specialPage) {
             url:     `/posts/special.json`,
             success: function(json) {
                 switch(topic) {
+                    case "about":
+                        json.about.forEach((box) => document.getElementById("blogspace").appendChild(
+                            div(["pText"], box.content, "", "", [])
+                        ))
+                        break;
                     case "lyrics":
                         json.lyrics.forEach((text) => 
                             document.getElementById("blogspace").appendChild(
@@ -114,6 +120,7 @@ function getTopicTitle(topic) {
         case "contact": return "Contact"
         case "music": return "Music"
         case "lyrics": return "Lyrics"
+        case "about": return "About me"
         default: "Something went wrong."
     }
 }

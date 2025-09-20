@@ -9,6 +9,12 @@
             "content": "<p><a href=\"https://discord.gg/FG3MTsTKDC\">Discord</a></p><p><a href=\"https://www.instagram.com/proxdxd03.artist\">Instagram</a></p>"
         }
     ],
+    "about": [
+        {
+            "cap": "About me",
+            "content": "<p>I go by proxdxd03 online, and I've always been a huge fan of music of all kinds.</p><p>Growing up in an environment that focused a lot on classical music as well as rock, I started playing instruments and listening to a lot of music quite early.</p><p>My love for electronic music in particular was sparked when I found out about trance and goa techno (especially blue planet corp.'s work) from a friend, and started listening to it all day, which made me want to try and download a daw and make my own techno.</p><p>Since I've always absolutely loved sound design, I started by crafting sound effects and melodies right from raw soundwaves and experimenting with various effect plugins on them, which definitely shaped my producing workflow a lot. It's really important to me to show that anyone who wants to can start to get into composing, so that's why I posted my first ever tracks (cryo) in 2022 just a few months after starting.</p><p>In the following time, I started listening to a lot of daft punk's records and got more into house music, which in particular impressed me with their crisp and clear drum design and made me learn more about mixing tracks. I also started listening to more soundtracks from various games (machinarium, the eternal cylinder, cult of the lamb, celeste), a culture that is really amazing in showing that good music doesn't have to have vocals, and composing instrumentals can convey just as much meaning and emotion.</p>"
+        }
+    ],
     "music": [
         {
             "cap": "Lookout (MIDI Chip Visualizer)",

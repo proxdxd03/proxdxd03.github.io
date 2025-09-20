@@ -321,6 +321,18 @@ a:focus {
     padding-top: 1vmin;
 }
 
+.pText {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+    padding-top: 1vmin;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 1vmin;
