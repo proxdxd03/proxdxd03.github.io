@@ -52,9 +52,13 @@ export function createPageLayout(topic, specialPage) {
             success: function(json) {
                 switch(topic) {
                     case "about":
-                        json.about.forEach((box) => document.getElementById("blogspace").appendChild(
-                            div(["pText"], box.content, "", "", [])
-                        ))
+                        json.about.forEach((box) => 
+                            document.getElementById("blogspace").appendChild(
+                                div(["contentbox"], "", "", "", box.content.map((text) => 
+                                    p(["aboutme"], text, "", "", [])
+                                ))
+                            )
+                        )
                         break;
                     case "lyrics":
                         json.lyrics.forEach((text) => 

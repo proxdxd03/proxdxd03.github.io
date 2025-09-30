@@ -321,7 +321,7 @@ a:focus {
     padding-top: 1vmin;
 }
 
-.pText {
+p.aboutme {
     font-size: 1.25rem;
     color: rgb(255, 255, 255);
     font-variation-settings: 'wght' 400;
@@ -330,7 +330,11 @@ a:focus {
     padding-left: 4vmin;
     padding-right: 4vmin;
     padding-bottom: 4vmin;
-    padding-top: 1vmin;
+    padding-top: 4vmin;
+}
+
+p+p.aboutme {
+    padding-top: 0;
 }
 
 /* width */
