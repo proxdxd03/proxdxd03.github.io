@@ -23,11 +23,58 @@
     ],
     "music": [
         {
-            "cap": "Lookout (MIDI Chip Visualizer)",
+            "cap": "Now I'm Found (MIDI Chip Visualizer)",
             "type": "spotlight",
             "track": {
-                "id": "x1tftJCzEuw"
+                "id": "ga0RZVZAg3Q"
             }
+        },
+        {
+            "cap": "Circuit Soul - Emotion",
+            "type": "album",
+            "tracks": [
+                {
+                    "name": "Cloud Castle",
+                    "id": "jLbu2wbwXFI",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Silence Before",
+                    "id": "hCKo6QZcc4w",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "The Storm",
+                    "id": "WdxZYhzGVSY",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Humankind, Break Down With Style",
+                    "id": "4fCLoPL0iB4",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Continue Down The Road",
+                    "id": "E-rofLTOpng",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Christmas Overture",
+                    "id": "PHN4beCgZcM",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Now I'm Found",
+                    "id": "ga0RZVZAg3Q",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                },
+                {
+                    "name": "Outro",
+                    "id": "zNNDpEhTkhA",
+                    "thumbnail": "20250920_circuitsoulemotion.jpg"
+                }
+                
+            ]
         },
         {
             "cap": "Circuit Soul - Immersion",
