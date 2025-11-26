@@ -14,9 +14,9 @@ export function createPageLayout(topic, specialPage) {
         div(["topright"], "", "", "", [
             a("/about/", topic === "about" ? ["current"] : [], "About me", "", "", []),
             a("/contact/", topic === "contact" ? ["current"] : [], "Contact", "", "", []),
-            a("/lyrics/", topic === "lyrics" ? ["current"] : [], "Lyrics", "", "", []),
+            a("/lyrics/", topic === "lyrics" ? ["current"] : [], "Lyrics", "", "margin-right: 4vmin", []),
             a("/music/", topic === "music" ? ["current"] : [], "Music", "", "", []),
-            a("/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "", []),
+            a("/other_news/", topic === "misc" ? ["current"] : [], "Other News", "", "margin-right: 4vmin", []),
             a("/concerts/", topic === "concert" ? ["current"] : [], "Concerts", "", "", []),
             a("/releases/", topic === "release" ? ["current"] : [], "Releases", "", "", [])
         ])
@@ -28,22 +28,28 @@ export function createPageLayout(topic, specialPage) {
         a("https://www.youtube.com/@proxdxdmusic", [], "", "", "", [
             img([], "", "/images/youtube.png", "")
         ]),
-        a("https://open.spotify.com/artist/2pfoI1ZRXb6ST9KhoGZlkW?si=JPZPuBWLRiWmNHov4lcRUA", [], "", "", "", [
-            img([], "", "/images/spotify.png", "")
+        a("https://discord.gg/FG3MTsTKDC", [], "", "", "", [
+            img([], "", "/images/dc.png", "")
+        ]),
+        a("https://proxdxd03.bandcamp.com", [], "", "", "", [
+            img([], "", "/images/bc.png", "")
+        ]),
+        a("https://soundcloud.com/proxdxd03", [], "", "", "", [
+            img([], "", "/images/sc.png", "")
         ]),
         a("https://apple.co/40h7otr", [], "", "", "", [
             img([], "", "/images/applemusic.png", "")
         ]),
-        a("https://music.amazon.com/artists/B0BHXKXMJ6/proxdxd03?marketplaceId=A1PA6795UKMFR9&musicTerritory=EN&ref=dm_sh_Ao7WQCuzyX4paOZ8Euz7b0XcJ", [], "", "", "", [
+        a("https://music.amazon.com/artists/B0BHXKXMJ6/proxdxd03", [], "", "", "", [
             img([], "", "/images/amazonmusic.png", "")
-        ]),
-        a("https://discord.gg/FG3MTsTKDC", [], "", "", "", [
-            img([], "", "/images/dc.png", "")
         ]),
         a("https://www.instagram.com/proxdxd03.artist", [], "", "", "", [
             img([], "", "/images/ig.png", "")
         ]),
-        p([], "© 2023 proxdxd03", "", "", [])
+        a("https://open.spotify.com/artist/2pfoI1ZRXb6ST9KhoGZlkW", [], "", "", "", [
+            img([], "", "/images/spotify.png", "")
+        ]),
+        p([], "© 2023-2025 proxdxd03", "", "", [])
     ]))
     if(specialPage) {
         $.ajax({
