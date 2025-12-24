@@ -31,6 +31,9 @@ export function createPageLayout(topic, specialPage) {
         a("https://discord.gg/FG3MTsTKDC", [], "", "", "", [
             img([], "", "/images/dc.png", "")
         ]),
+        a("https://buymeacoffee.com/proxdxd03", [], "", "", "", [
+            img([], "", "/images/bmc.png", "")
+        ]),
         a("https://proxdxd03.bandcamp.com", [], "", "", "", [
             img([], "", "/images/bc.png", "")
         ]),
